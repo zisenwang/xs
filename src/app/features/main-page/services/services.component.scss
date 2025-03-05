@@ -1,0 +1,30 @@
+.services {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.services .service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services .service-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
+}
+
+.services .service-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.services .service-card p {
+  font-size: 1rem;
+  color: #555;
+}

@@ -1,0 +1,40 @@
+<section class="hero-section">
+  <div class="video-background">
+    <video
+      muted
+      autoplay
+      loop
+      playsinline
+    >
+      <source src="/video_360p.mp4" type="video/mp4"/>
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="text-container">
+      <p-image src="/logo_empty.png" alt="logo" class="logo"></p-image>
+      <h1 class="title" [style.fontSize.rem]="4">
+        欢迎来到未来教育
+      </h1>
+      <h2 class="subtitle" [style.fontSize.rem]="2">
+        开启您的留学之旅
+      </h2>
+      <div class="cta-buttons">
+        <p-button
+          label="了解更多"
+          styleClass="mr-3"
+          size="large"
+          [rounded]="true">
+        </p-button>
+        <p-button
+          label="立即咨询"
+          severity="secondary"
+          size="large"
+          [rounded]="true">
+        </p-button>
+      </div>
+    </div>
+  </div>
+</section>
+

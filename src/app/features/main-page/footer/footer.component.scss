@@ -1,0 +1,26 @@
+$footer-bg: #343a40;
+$footer-text-color: white;
+$link-color: #007bff;
+$link-hover-color: #0056b3;
+$footer-padding: 1rem;
+$link-margin: 0.5rem;
+
+footer {
+  background-color: $footer-bg;
+  color: $footer-text-color;
+  text-align: center;
+  padding: $footer-padding 0;
+  font-size: 0.875rem;
+
+  // 嵌套的链接样式
+  a {
+    color: $link-color;
+    text-decoration: none;
+    margin: 0 $link-margin;
+
+    // 使用&符号引用父选择器实现hover效果
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+}
