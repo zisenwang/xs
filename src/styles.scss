@@ -1,3 +1,8 @@
+@use "primeicons/primeicons.css";
+@use "tailwindcss" as *;
+@plugin 'tailwindcss-primeui';
+@layer tailwind, primeng;
+
 html {
   scroll-behavior: smooth;
 }

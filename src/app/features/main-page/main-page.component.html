@@ -1,19 +1,19 @@
-<xs-main-page-header></xs-main-page-header>
-<p-divider></p-divider>
-<xs-main-page-banner></xs-main-page-banner>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
-<p-divider></p-divider>
+<!-- main-page.component.html -->
+<div class="relative min-h-screen">
+  <!-- 顶部导航 -->
+  <xs-header class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300">
+  </xs-header>
 
-<xs-main-page-services></xs-main-page-services>
-<xs-main-page-footer></xs-main-page-footer>
+  <!-- Hero Section -->
+  <xs-main-page-banner></xs-main-page-banner>
+
+  <!-- 主要内容区域 -->
+  <main class="relative bg-white">
+    <xs-main-page-badge></xs-main-page-badge>
+    <!-- 服务部分 -->
+    <xs-main-page-services></xs-main-page-services>
+
+    <!-- 其他部分... -->
+    <xs-main-page-footer></xs-main-page-footer>
+  </main>
+</div>

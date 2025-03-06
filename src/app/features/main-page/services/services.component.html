@@ -1,13 +1,17 @@
-<section id="services" class="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      @for(service of services; track service.title) {
-        <div class="service-card">
-          <h3>{{ service.title }}</h3>
-          <p>{{ service.description }}</p>
+<section id="services" class="py-16 px-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+    @for(service of services; track service.title) {
+      <p-card
+        class="transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+        pAnimateOnScroll
+        enterClass="animate-enter fade-in-10 slide-in-from-b-20 animate-duration-2000"
+        [header]="service.title"
+        [style]="{ width: '100%' }"
+      >
+        <div class="p-6">
+          <p class="text-gray-600 leading-relaxed">{{ service.description }}</p>
         </div>
-      }
-    </div>
+      </p-card>
+    }
   </div>
 </section>

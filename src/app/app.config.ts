@@ -39,7 +39,7 @@ export const appConfig: ApplicationConfig = {
     providePrimeNG({
       ripple: true,
       theme: {
-        preset: BluePreset
+        preset: BluePreset,
       }
     })
   ],

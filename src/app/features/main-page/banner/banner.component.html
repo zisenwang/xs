@@ -1,41 +1,75 @@
-<section class="hero-section">
-  <div class="video-background">
+<!--<section class="hero-section">-->
+<!--  <div class="video-background">-->
+<!--    <video-->
+<!--      autoplay-->
+<!--      loop-->
+<!--      playsinline-->
+<!--      preload="auto"-->
+<!--      onloadedmetadata="this.muted = true"-->
+<!--    >-->
+<!--      <source src="/video_360p.mp4" type="video/mp4"/>-->
+<!--    </video>-->
+<!--    <div class="overlay"></div>-->
+<!--  </div>-->
+
+<!--  <div class="hero-content">-->
+<!--    <div class="text-container">-->
+<!--      <p-image src="/logo_empty.png" alt="logo" class="logo"></p-image>-->
+<!--      <h1 class="title" [style.fontSize.rem]="4">-->
+<!--        欢迎来到未来教育-->
+<!--      </h1>-->
+<!--      <h2 class="subtitle" [style.fontSize.rem]="2">-->
+<!--        开启您的留学之旅-->
+<!--      </h2>-->
+<!--      <div class="cta-buttons">-->
+<!--        <p-button-->
+<!--          label="了解更多"-->
+<!--          styleClass="mr-3"-->
+<!--          size="large"-->
+<!--          [rounded]="true">-->
+<!--        </p-button>-->
+<!--        <p-button-->
+<!--          label="立即咨询"-->
+<!--          severity="secondary"-->
+<!--          size="large"-->
+<!--          [rounded]="true">-->
+<!--        </p-button>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!-- banner.component.html -->
+<div class="relative w-full h-screen overflow-hidden">
+  <!-- 背景视频或图片 -->
+  <div class="fixed top-0 left-0 w-full h-screen bg-cover bg-center bg-no-repeat -z-10">
+    <div class="absolute inset-0 bg-black/40 z-10"></div>
     <video
+      class="w-full h-full object-cover"
       autoplay
+      muted
       loop
-      playsinline
       preload="auto"
       onloadedmetadata="this.muted = true"
-    >
-      <source src="/video_360p.mp4" type="video/mp4"/>
+      [src]="videoUrl">
     </video>
-    <div class="overlay"></div>
   </div>
 
-  <div class="hero-content">
-    <div class="text-container">
-      <p-image src="/logo_empty.png" alt="logo" class="logo"></p-image>
-      <h1 class="title" [style.fontSize.rem]="4">
-        欢迎来到未来教育
-      </h1>
-      <h2 class="subtitle" [style.fontSize.rem]="2">
-        开启您的留学之旅
-      </h2>
-      <div class="cta-buttons">
-        <p-button
-          label="了解更多"
-          styleClass="mr-3"
-          size="large"
-          [rounded]="true">
-        </p-button>
-        <p-button
-          label="立即咨询"
-          severity="secondary"
-          size="large"
-          [rounded]="true">
-        </p-button>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- 内容层 -->
+  <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center justify-center text-white">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6">秀思科技</h1>
+    <p class="text-xl md:text-2xl mb-12">创新技术，智慧未来</p>
 
+
+
+  </div>
+  <!-- 滚动指示器 -->
+  <div class="absolute bottom-10 w-full flex justify-center animate-bounce">
+    <button
+      class="text-white flex flex-col items-center gap-2"
+      (click)="scrollToService()">
+      <span class="text-sm">探索更多</span>
+      <i class="pi pi-chevron-down text-2xl"></i>
+    </button>
+  </div>
+</div>

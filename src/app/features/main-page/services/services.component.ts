@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
+import {CardModule} from 'primeng/card';
+import { AnimateOnScrollModule} from 'primeng/animateonscroll';
 
 @Component({
   selector: 'xs-main-page-services',
-  imports: [],
+  imports: [
+    CardModule,
+    AnimateOnScrollModule
+  ],
   templateUrl: './services.component.html',
-  styleUrl: './services.component.scss'
+  styleUrl: './services.component.scss',
+  standalone: true
 })
 export class ServicesComponent {
   services = [

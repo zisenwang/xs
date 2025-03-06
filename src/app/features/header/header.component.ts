@@ -2,11 +2,16 @@ import {Component, inject} from '@angular/core';
 import {ButtonModule} from 'primeng/button';
 import {MenuItem} from 'primeng/api';
 import {Menubar} from 'primeng/menubar';
-import {ScrollService} from '@shared/services';
+import {ScrollService} from '@services/index';
+import {CommonModule} from '@angular/common';
 
 @Component({
-  selector: 'xs-main-page-header',
-  imports: [ButtonModule, Menubar],
+  selector: 'xs-header',
+  imports: [
+    ButtonModule,
+    Menubar,
+    CommonModule
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   standalone: true
