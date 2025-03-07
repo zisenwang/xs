@@ -23,7 +23,7 @@ export class HeaderComponent {
       {
         label: '公司简介',
         icon: 'pi pi-fw pi-briefcase',
-        command: () => this.scrollService.scrollToElement('services')
+        command: () => this.scrollService.scrollToElement('badge')
       },
       {
         label: '成功案例',
