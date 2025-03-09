@@ -32,7 +32,7 @@ export class HeaderComponent {
       },
       {
         label: 'AI教师',
-        icon: 'pi pi-fw pi-comments',
+        icon: 'pi pi-fw pi-cloud',
       },
       {
         label: '联系我们',

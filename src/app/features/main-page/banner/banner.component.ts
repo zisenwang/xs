@@ -13,7 +13,8 @@ import {ScrollService} from '@shared/services';
 export class BannerComponent {
   private scrollService = inject(ScrollService);
   videoUrl = '/video_360p.mp4'
-  videoLoaded = false;
+  backgroundImageUrl = '/maxresdefault.jpg';
+
 
   scrollToService = () => this.scrollService.scrollToElement("services")
 }

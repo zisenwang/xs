@@ -1,6 +1,7 @@
 <div class="relative w-full h-screen overflow-hidden">
-  <!-- 背景视频或图片 -->
+  <!-- hero section -->
   <div class="fixed top-0 left-0 w-full h-screen bg-cover bg-center bg-no-repeat -z-10">
+    <!--  overlay  -->
     <div class="absolute inset-0 bg-black/60 z-10"></div>
     <video
       class="w-full h-full object-cover"
@@ -11,8 +12,11 @@
       onloadedmetadata="this.muted = true"
       [src]="videoUrl">
     </video>
-    <div class="absolute inset-0 bg-[url(/maxresdefault.jpg)] -z-15 bg-cover bg-no-repeat bg-center"></div>
+    <!-- static background img to transit loading video -->
+    <div class="absolute inset-0 -z-15 bg-cover bg-no-repeat bg-center"
+         [style.backgroundImage]="'url(' + backgroundImageUrl + ')'"
 
+    ></div>
   </div>
 
   <!-- 内容层 -->
