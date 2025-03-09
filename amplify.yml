@@ -14,3 +14,14 @@ frontend:
   cache:
     paths:
       - .npm/**/*
+  customHeaders:
+    - pattern: '**/*.mp4'
+      headers:
+        - key: 'Content-Type'
+          value: 'video/mp4'
+        - key: 'Accept-Ranges'
+          value: 'bytes'
+    - pattern: '**/*'
+      headers:
+        - key: 'Cache-Control'
+          value: 'max-age=0,no-cache,no-store,must-revalidate'
