@@ -6,6 +6,8 @@ import {ServicesComponent} from "./services/services.component";
 import {CommonModule} from '@angular/common';
 import {BadgeComponent} from '@app/features/main-page/badge/badge.component';
 import {TestimonialsComponent} from '@app/features/main-page/testimonials/testimonials.component';
+import {ChatComponent} from '@app/features/main-page/chat/chat.component';
+import {BusinessComponent} from '@app/features/main-page/business/business.component';
 
 @Component({
   selector: 'xs-main-page',
@@ -16,7 +18,9 @@ import {TestimonialsComponent} from '@app/features/main-page/testimonials/testim
     ServicesComponent,
     CommonModule,
     BadgeComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    ChatComponent,
+    BusinessComponent
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',
