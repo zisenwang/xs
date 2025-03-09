@@ -8,7 +8,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    baseDirectory: dist/xiusi
+    baseDirectory: dist/xiusi/browser
     files:
       - '**/*'
   cache:
