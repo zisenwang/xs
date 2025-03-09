@@ -25,3 +25,12 @@ frontend:
       headers:
         - key: 'Cache-Control'
           value: 'max-age=0,no-cache,no-store,must-revalidate'
+  customRules:
+    - pattern: '</^[^.]+$|\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|mp4)$)([^.]+$)/>'
+      target: '/index.html'
+      status: '200'
+      condition: null
+    - source: '/api/<*>'
+      target: '/api/<*>'
+      status: '200'
+
