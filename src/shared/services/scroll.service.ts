@@ -27,3 +27,5 @@ export class ScrollService {
     }
   }
 }
+
+export const ABC = 'a'
