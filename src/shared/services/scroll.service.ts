@@ -27,6 +27,3 @@ export class ScrollService {
     }
   }
 }
-
-//TODO: remove this
-export const ABC = 'abc'
