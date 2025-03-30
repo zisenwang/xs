@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import {Image} from 'primeng/image';
 
 @Component({
-  selector: 'xs-main-page-badge',
+  selector: 'xs-main-page-intro',
   imports: [
     Image
   ],
-  templateUrl: './badge.component.html',
-  styleUrl: './badge.component.scss',
+  templateUrl: './intro.component.html',
+  styleUrl: './intro.component.scss',
   standalone: true
 })
-export class BadgeComponent {
+export class IntroComponent {
 
 }

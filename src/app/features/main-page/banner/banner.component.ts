@@ -16,5 +16,5 @@ export class BannerComponent {
   backgroundImageUrl = '/maxresdefault.jpg';
 
 
-  scrollToService = () => this.scrollService.scrollToElement("badge")
+  scrollToService = () => this.scrollService.scrollToElement("intro")
 }

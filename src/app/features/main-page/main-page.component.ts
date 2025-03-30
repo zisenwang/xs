@@ -4,7 +4,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from '@app/features/main-page/header/header.component';
 import { ServicesComponent } from './services/services.component';
 import { CommonModule } from '@angular/common';
-import { BadgeComponent } from '@app/features/main-page/badge/badge.component';
+import { IntroComponent } from '@app/features/main-page/intro/intro.component';
 import { TestimonialsComponent } from '@app/features/main-page/testimonials/testimonials.component';
 import { ChatComponent } from '@app/features/main-page/chat/chat.component';
 import { BusinessComponent } from '@app/features/main-page/business/business.component';
@@ -17,7 +17,7 @@ import { BusinessComponent } from '@app/features/main-page/business/business.com
     HeaderComponent,
     ServicesComponent,
     CommonModule,
-    BadgeComponent,
+    IntroComponent,
     TestimonialsComponent,
     ChatComponent,
     BusinessComponent,
