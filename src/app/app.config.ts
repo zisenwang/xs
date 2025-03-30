@@ -5,6 +5,9 @@ import { routes } from './app.routes';
 import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
 import {providePrimeNG} from 'primeng/config';
 import Lara from '@primeng/themes/lara'
+import {provideTranslateService, TranslateLoader} from '@ngx-translate/core';
+import {HttpClient, provideHttpClient} from '@angular/common/http';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 const BluePreset = {
   ...Lara,
@@ -31,6 +34,9 @@ const BluePreset = {
   }
 };
 
+const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: HttpClient) =>
+  new TranslateHttpLoader(http, './i18n/', '.json');
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
@@ -40,14 +46,22 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled'
-  })
-
+      })
     ),
     provideAnimationsAsync(),
     providePrimeNG({
       ripple: true,
       theme: {
         preset: BluePreset,
+      }
+    }),
+    provideHttpClient(),
+    provideTranslateService({
+      defaultLanguage: 'zh-CN',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpLoaderFactory,
+        deps: [HttpClient],
       }
     })
   ],
