@@ -17,9 +17,18 @@ export class HeaderComponent {
 
   items: MenuItem[] = [
     {
-      label: '公司简介',
+      label: '公司介绍',
       icon: 'pi pi-fw pi-briefcase',
-      command: () => this.scrollService.scrollToElement('badge'),
+      command: () => this.scrollService.scrollToElement('intro'),
+    },
+    {
+      label: '教师介绍',
+      icon: 'pi pi-fw pi-user',
+      command: () => this.scrollService.scrollToElement('teacher'),
+    },
+    {
+      label: '产品介绍',
+      icon: 'pi pi-fw pi-cloud',
     },
     {
       label: '成功案例',
@@ -27,18 +36,9 @@ export class HeaderComponent {
       command: () => this.scrollService.scrollToElement('testimonials'),
     },
     {
-      label: 'AI教师',
-      icon: 'pi pi-fw pi-cloud',
-    },
-    {
       label: '联系我们',
       icon: 'pi pi-fw pi-envelope',
       command: () => this.scrollService.scrollToElement('contact'),
-    },
-    {
-      label: '教师介绍',
-      icon: 'pi pi-fw pi-user',
-      command: () => this.scrollService.scrollToElement('teacher'),
     },
   ];
 }
