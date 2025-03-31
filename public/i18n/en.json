@@ -1,0 +1,34 @@
+{
+  "app": {
+    "title": "Hills Education & Technology"
+  },
+  "header": {
+    "aboutUs": "About Us",
+    "ourTeachers": "Our Teachers",
+    "ourPrograms": "Our Programs",
+    "successStories": "Success Stories",
+    "contactUs": "Contact Us"
+  },
+  "banner": {
+    "educationFirst": "Education First",
+    "slogan": "Welcoming a student means embracing a responsibility"
+  },
+  "programs": {
+    "prepSub": {
+      "title": "Subject Prep Courses",
+      "slogan": "Get ahead by mastering the fundamentals"
+    },
+    "interview": {
+      "title": "Exam & Interview Coaching",
+      "slogan": "Tailored Oxbridge training with an insider’s perspective on elite university admissions"
+    },
+    "camp": {
+      "title": "Summer Intensive Camps",
+      "slogan": "Fill in knowledge gaps and boost academic performance in a short time"
+    },
+    "exam": {
+      "title": "Competitions & Standardized Tests",
+      "slogan": "Strategic preparation to maximize scores with precision"
+    }
+  }
+}

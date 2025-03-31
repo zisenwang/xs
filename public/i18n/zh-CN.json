@@ -1,0 +1,34 @@
+{
+  "app": {
+    "title": "修斯国际教育"
+  },
+  "header": {
+    "aboutUs": "公司介绍",
+    "ourTeachers": "教师介绍",
+    "ourPrograms": "产品介绍",
+    "successStories": "成功案例",
+    "contactUs": "联系我们"
+  },
+  "banner": {
+    "educationFirst": "教育为本",
+    "slogan": "接受一位孩子就是接受一份责任"
+  },
+  "programs": {
+    "prepSub": {
+      "title": "学科先修课程",
+      "slogan": "超前学习，回归知识本质"
+    },
+    "interview": {
+      "title": "笔试面试辅导",
+      "slogan": "牛剑针对性训练，考官角度看待名校申请"
+    },
+    "camp": {
+      "title": "暑期集训营",
+      "slogan": "查漏补缺，短时间内提高学科素养"
+    },
+    "exam": {
+      "title": "竞赛/标化考试",
+      "slogan": "系统备考，精准提分"
+    }
+  }
+}
