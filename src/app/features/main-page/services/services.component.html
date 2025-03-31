@@ -10,9 +10,9 @@
             <img alt="Card" class="w-full h-48 object-cover" src="{{ service.image }}" />
           </ng-template>
           <ng-template #title>
-            <span class="text-xl font-bold w-full flex justify-center text-center">{{ service.title }}</span>
+            <span class="text-xl font-bold w-full flex justify-center text-center">{{ service.title |translate}}</span>
           </ng-template>
-          <p class="text-gray-600 leading-relaxed flex justify-center text-center truncate">{{ service.description }}</p>
+          <p class="text-gray-600 leading-relaxed flex justify-center text-center truncate">{{ service.description | translate}}</p>
         </p-card>
 
     }

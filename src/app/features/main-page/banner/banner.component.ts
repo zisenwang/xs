@@ -1,11 +1,12 @@
 import {Component, inject} from '@angular/core';
 import {Button} from 'primeng/button';
 import {ScrollService} from '@shared/services';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'xs-main-page-banner',
   imports: [
-    Button
+    TranslatePipe
   ],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss'

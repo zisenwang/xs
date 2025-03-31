@@ -20,15 +20,15 @@
 
   <!-- Banner Content -->
   <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center justify-center text-white">
-    <h1 class="text-5xl md:text-7xl font-bold mb-6">教育为本</h1>
-    <p class="text-xl md:text-2xl mb-12">接受一位孩子就是接受一份责任</p>
+    <h1 class="text-5xl md:text-7xl font-bold mb-6">{{ 'banner.educationFirst' | translate}}</h1>
+    <p class="text-xl md:text-2xl mb-12">{{ 'banner.slogan' | translate}}</p>
   </div>
   <!-- Scroll more -->
   <div class="absolute bottom-10 w-full flex justify-center animate-bounce">
     <button
       class="text-white flex flex-col items-center gap-2"
       (click)="scrollToService()">
-      <span class="text-sm">探索更多</span>
+      <span class="text-sm">{{ 'banner.more' | translate}}</span>
       <i class="pi pi-chevron-down text-2xl"></i>
     </button>
   </div>

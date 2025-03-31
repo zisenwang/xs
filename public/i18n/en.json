@@ -1,17 +1,19 @@
 {
   "app": {
-    "title": "Hills Education & Technology"
+    "title": "Hills Education & Technology",
+    "switch": "Switch to: "
   },
   "header": {
     "aboutUs": "About Us",
-    "ourTeachers": "Our Teachers",
-    "ourPrograms": "Our Programs",
+    "teachers": "Our Teachers",
+    "programs": "Our Programs",
     "successStories": "Success Stories",
     "contactUs": "Contact Us"
   },
   "banner": {
     "educationFirst": "Education First",
-    "slogan": "Welcoming a student means embracing a responsibility"
+    "slogan": "Welcoming a student means embracing a responsibility",
+    "more": "Discover More"
   },
   "programs": {
     "prepSub": {

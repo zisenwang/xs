@@ -1,12 +1,14 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 import {CardModule} from 'primeng/card';
 import { AnimateOnScrollModule} from 'primeng/animateonscroll';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'xs-main-page-services',
   imports: [
     CardModule,
-    AnimateOnScrollModule
+    AnimateOnScrollModule,
+    TranslatePipe
   ],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss',
@@ -15,10 +17,10 @@ import { AnimateOnScrollModule} from 'primeng/animateonscroll';
 })
 export class ServicesComponent {
   services = [
-    { title: '学科先修课程', description: '超前学习，回归知识本质', image: '/lessons.png' },
-    { title: '笔试面试辅导', description: '牛剑针对性训练，考官角度看待名校申请', image: '/interview.png' },
-    { title: '暑期集训营', description: '查漏补缺，短时间内提高学科素养', image: '/camp.png'},
-    { title: '竞赛/标化考试', description: '系统备考，精准提分', image: '/exam.png'}
+    { title: 'programs.prepSub.title', description: 'programs.prepSub.slogan', image: '/lessons.png' },
+    { title: 'programs.interview.title', description: 'programs.interview.slogan', image: '/interview.png' },
+    { title: 'programs.camp.title', description: 'programs.camp.slogan', image: '/camp.png'},
+    { title: 'programs.exam.title', description: 'programs.exam.slogan', image: '/exam.png'}
   ];
 
 }

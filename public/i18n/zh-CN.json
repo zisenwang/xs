@@ -1,17 +1,19 @@
 {
   "app": {
-    "title": "修斯国际教育"
+    "title": "修斯国际教育",
+    "switch": "切换为："
   },
   "header": {
     "aboutUs": "公司介绍",
-    "ourTeachers": "教师介绍",
-    "ourPrograms": "产品介绍",
+    "teachers": "教师介绍",
+    "programs": "产品介绍",
     "successStories": "成功案例",
     "contactUs": "联系我们"
   },
   "banner": {
     "educationFirst": "教育为本",
-    "slogan": "接受一位孩子就是接受一份责任"
+    "slogan": "接受一位孩子就是接受一份责任",
+    "more": "探索更多"
   },
   "programs": {
     "prepSub": {
