@@ -1,11 +1,14 @@
-<p-menubar>
+<p-menubar [model]="items">
   <ng-template #start>
     <a href="/">
       <img src="/logo_chin.png" class="h-[80px]" alt="Logo"/>
     </a>
   </ng-template>
-  <ng-template #item let-item>
-    <
+  <ng-template #item let-item let-root="root">
+    <div class="p-4">
+      <i [class]="item.icon"></i>
+      <span>{{item.label | translate}}</span>
+    </div>
   </ng-template>
   <ng-template #end>
     <p>{{'app.switch' | translate}}</p>
