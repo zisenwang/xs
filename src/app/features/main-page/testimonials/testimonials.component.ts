@@ -4,7 +4,6 @@ import {DropdownModule} from 'primeng/dropdown';
 import {Card} from 'primeng/card';
 import {Carousel} from 'primeng/carousel';
 import {Divider} from 'primeng/divider';
-import {TranslatePipe} from '@ngx-translate/core';
 import {AnimateOnScrollModule} from 'primeng/animateonscroll';
 
 interface SuccessCase {
@@ -26,7 +25,6 @@ interface SuccessCase {
     Card,
     Carousel,
     Divider,
-    TranslatePipe,
     AnimateOnScrollModule
   ],
   templateUrl: './testimonials.component.html',
