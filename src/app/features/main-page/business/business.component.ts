@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
+import {Card} from 'primeng/card';
+import {ImageScrollComponent} from '@shared/components/image-scroll/image-scroll.component';
 
 @Component({
   selector: 'xs-main-page-business',
-  imports: [],
+  imports: [
+    Card,
+    ImageScrollComponent
+  ],
   templateUrl: './business.component.html',
   styleUrl: './business.component.scss',
   standalone: true,
@@ -10,7 +15,7 @@ import { Component } from '@angular/core';
 export class BusinessComponent {
   desc = {
     // 主标题
-    title: "关于申请",
+    title: "我们的观点",
 
     // 主要描述
     mainDesc: `为学子圆梦名校的专业助手。始终秉持"以学生为中心"的原则，提供权威、专业、高效的留学规划与申请服务，努力让每一位同学都找到最适合的学校。`,
@@ -51,4 +56,10 @@ export class BusinessComponent {
     // 号召性用语
     callToAction: "开启您的留学之旅"
   };
+
+  statistics = [
+    { value: '30%', label: '牛剑录取率' },
+    { value: '95%', label: '面邀率' },
+    { value: '100+', label: '牛剑Offer' }
+  ];
 }

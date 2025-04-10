@@ -6,6 +6,7 @@ import {Carousel} from 'primeng/carousel';
 import {Divider} from 'primeng/divider';
 import {AnimateOnScrollModule} from 'primeng/animateonscroll';
 import {ImageScrollComponent} from '@shared/components/image-scroll/image-scroll.component';
+import {TranslatePipe} from '@ngx-translate/core';
 
 interface SuccessCase {
   studentName: string;
@@ -27,7 +28,8 @@ interface SuccessCase {
     Carousel,
     Divider,
     AnimateOnScrollModule,
-    ImageScrollComponent
+    ImageScrollComponent,
+    TranslatePipe
   ],
   templateUrl: './testimonials.component.html',
   styleUrl: './testimonials.component.scss',
@@ -69,11 +71,7 @@ export class TestimonialsComponent {
     },
   ];
 
-  statistics = [
-    { value: '98%', label: '录取率' },
-    { value: '1000+', label: '成功案例' },
-    { value: '50+', label: '合作院校' }
-  ];
+
 
   responsiveOptions = [
     {
