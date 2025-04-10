@@ -38,6 +38,7 @@ export class HeaderComponent implements OnInit{
     {
       label: 'header.programs',
       icon: 'pi pi-fw pi-cloud',
+      command: () => this.scrollService.scrollToElement('business'),
     },
     {
       label: 'header.successStories',

@@ -28,7 +28,6 @@ interface SuccessCase {
     Carousel,
     Divider,
     AnimateOnScrollModule,
-    ImageScrollComponent,
     TranslatePipe
   ],
   templateUrl: './testimonials.component.html',

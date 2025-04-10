@@ -36,5 +36,35 @@
   "testimonials": {
     "success stories": "Success Stories",
     "slogan": "Explore Real Stories of How We Help Students Achieve Their Dreams"
+  },
+  "business": {
+    "stats": {
+      "ox accepted":"Oxbridge Acceptance Rate",
+      "interview": "Interview Success",
+      "ox offer": "Oxbridge Offers"
+    },
+    "our philosophy": "Our Philosophy",
+    "desc": "Drawing from years of teaching expertise, we craft personalized learning solutions and integrate hybrid online-offline teaching methods to maximize learning outcomes.",
+    "subs": {
+      "exam": {
+        "title": "About Examinations",
+        "desc": "Comprehensive analysis of standardized tests like SAT, ACT, and AP, providing targeted preparation strategies and timeline planning to help you achieve your desired scores."
+      },
+      "curriculum": {
+        "title": "Exclusive Curriculum",
+        "desc": "Comprehensive analysis of standardized tests like SAT, ACT, and AP, providing targeted preparation strategies and timeline planning to help you achieve your desired scores."
+
+      },
+      "faculty": {
+        "title": "Teaching Faculty",
+        "desc": "Comprehensive analysis of standardized tests like SAT, ACT, and AP, providing targeted preparation strategies and timeline planning to help you achieve your desired scores."
+
+      },
+      "success": {
+        "title": "Success Stories",
+        "desc": "Comprehensive analysis of standardized tests like SAT, ACT, and AP, providing targeted preparation strategies and timeline planning to help you achieve your desired scores."
+
+      }
+    }
   }
 }

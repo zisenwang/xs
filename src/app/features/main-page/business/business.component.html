@@ -1,36 +1,36 @@
-<div class="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-  <section class="bg-gray-900 text-white py-16 mt-auto">
+<section id="business" class="min-h-[95vh] flex flex-col">
+  <div class="bg-gray-900 text-white py-8 mt-auto">
     <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        @for (stat of statistics; track stat.value) {
+        @for (stat of statistics; track stat.title) {
           <div class="text-center p-4">
             <p-card>
-              <h3 class="text-4xl font-bold text-gray-900 mb-2">{{stat.value}}</h3>
-              <p class="text-gray-500 text-xl">{{stat.label}}</p>
+              <h3 class="text-4xl font-bold text-gray-900 mb-2">{{stat.description}}</h3>
+              <p class="text-gray-500 text-xl">{{stat.title | translate}}</p>
             </p-card>
           </div>
         }
       </div>
     </div>
-  </section>
+  </div>
 
-  <!--  school badges scrolling-->
-  <section>
-    <xs-shared-images-scroll></xs-shared-images-scroll>
-  </section>
-  <section class="py-16 px-4 text-center">
-    <h1 class="text-4xl font-bold text-gray-800 mb-6">{{desc.title}}</h1>
-    <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{desc.mainDesc}}</p>
-  </section>
-
-  <section class="py-12 px-4">
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-      @for(item of desc.highlights; track item.title) {
-        <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-          <h3 class="text-xl font-semibold text-gray-800 mb-4">{{item.title}}</h3>
-          <p class="text-gray-600">{{item.desc}}</p>
-        </div>
-      }
+  <div class="bg-blue-100 items-center justify-center flex-1 flex flex-col py-4">
+    <div class="text-center items-center justify-center max-w-7xl mx-auto pb-8 px-4">
+      <h1 class="text-center text-4xl font-bold text-gray-800 mb-6">{{'business.our philosophy' | translate}}</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{'business.desc' | translate}}</p>
     </div>
-  </section>
-</div>
+
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+    @for(item of highlights; track item.title) {
+      <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">{{item.title | translate}}</h3>
+        <p class="text-gray-600">{{item.description! | translate}}</p>
+      </div>
+    }
+    </div>
+  </div>
+  <!--  school badges scrolling-->
+  <xs-shared-images-scroll class="py-4"></xs-shared-images-scroll>
+</section>
+
