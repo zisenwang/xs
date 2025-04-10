@@ -1,14 +1,12 @@
 <!-- success-cases.component.html -->
 <section id="testimonials" class="min-h-screen bg-gradient-to-b from-gray-50 to-white ">
-
   <div class="h-8 bg-white"></div>
   <section class="min-h-screen">
-    <!-- 顶部横幅 -->
       <div class="bg-teal-400">
         <div class="max-w-7xl mx-auto text-center py-8 px-4">
-        <h1 class="text-4xl font-bold mb-4 text-white">成功案例展示</h1>
+        <h1 class="text-4xl font-bold mb-4 text-white">{{'testimonials.success stories' | translate}}</h1>
         <p class="text-xl text-white-alpha-90">
-          探索我们帮助学子们实现梦想的真实故事
+          {{'testimonials.slogan' | translate}}
         </p>
       </div>
     </div>
@@ -57,26 +55,6 @@
           </div>
         </ng-template>
       </p-carousel>
-    </div>
-  </section>
-
-
-
-
-
-  <!-- 统计数据 -->
-  <section class="bg-gray-900 text-white py-16 mt-auto">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        @for (stat of statistics; track stat.value) {
-          <div class="text-center p-4">
-            <p-card>
-              <h3 class="text-4xl font-bold text-gray-900 mb-2">{{stat.value}}</h3>
-              <p class="text-gray-500 text-xl">{{stat.label}}</p>
-            </p-card>
-          </div>
-        }
-      </div>
     </div>
   </section>
 </section>
