@@ -5,7 +5,6 @@ import {Card} from 'primeng/card';
 import {Carousel} from 'primeng/carousel';
 import {Divider} from 'primeng/divider';
 import {AnimateOnScrollModule} from 'primeng/animateonscroll';
-import {ImageScrollComponent} from '@shared/components/image-scroll/image-scroll.component';
 import {TranslatePipe} from '@ngx-translate/core';
 
 interface SuccessCase {
