@@ -4,6 +4,7 @@ import { Menubar } from 'primeng/menubar';
 import { ScrollService } from '@services/index';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'xs-header',
@@ -15,6 +16,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class HeaderComponent implements OnInit {
   private scrollService = inject(ScrollService);
   private translate = inject(TranslateService);
+  private router = inject(Router);
 
   currentLang = this.translate.currentLang;
 
@@ -27,7 +29,7 @@ export class HeaderComponent implements OnInit {
     {
       label: 'header.aboutUs',
       icon: 'pi pi-fw pi-briefcase',
-      command: () => this.scrollService.scrollToElement('intro'),
+      command: () => this.router.navigate(['/about-us']),
     },
     {
       label: 'header.teachers',
