@@ -1,32 +1,19 @@
-import { Component, HostListener } from '@angular/core';
-import { BannerComponent } from './banner/banner.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from '@app/features/main-page/header/header.component';
+import { Component } from '@angular/core';
+import { HeaderComponent } from '@app/features/header/header.component';
 import { CommonModule } from '@angular/common';
-import { IntroComponent } from '@app/features/main-page/intro/intro.component';
-import { TestimonialsComponent } from '@app/features/main-page/testimonials/testimonials.component';
-import { BusinessComponent } from '@app/features/main-page/business/business.component';
+import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'xs-main-page',
   imports: [
-    BannerComponent,
-    FooterComponent,
     HeaderComponent,
     CommonModule,
-    IntroComponent,
-    TestimonialsComponent,
-    BusinessComponent,
+    RouterOutlet,
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',
   standalone: true,
 })
 export class MainPageComponent {
-  isScrolled = false;
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.isScrolled = window.scrollY > 50;
-  }
 }

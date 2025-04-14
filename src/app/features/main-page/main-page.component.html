@@ -1,17 +1,7 @@
 <!-- main-page.component.html -->
 <div class="relative min-h-screen">
-  <!-- 顶部导航 -->
   <xs-header class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300">
   </xs-header>
 
-  <!-- Hero Section -->
-  <xs-main-page-banner></xs-main-page-banner>
-
-  <!-- 主要内容区域 -->
-  <main class="relative bg-white z-40">
-    <xs-main-page-intro></xs-main-page-intro>
-    <xs-main-page-testimonials></xs-main-page-testimonials>
-    <xs-main-page-business></xs-main-page-business>
-    <xs-main-page-footer></xs-main-page-footer>
-  </main>
+  <router-outlet></router-outlet>
 </div>
