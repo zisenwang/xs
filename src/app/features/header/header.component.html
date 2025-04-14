@@ -1,22 +1,31 @@
 <p-menubar [model]="items">
   <ng-template #start>
     <a href="/public">
-      <img src="/images/logo.png" class="h-[70px]" alt="Logo"/>
+      <img src="/images/logo.png" class="h-[70px]" alt="Logo" />
     </a>
   </ng-template>
   <ng-template #item let-item let-root="root">
     <div class="p-4">
       <i [class]="item.icon"></i>
-      <span>{{item.label | translate}}</span>
+      <span>{{ item.label | translate }}</span>
     </div>
   </ng-template>
   <ng-template #end>
     <div class="flex">
-      <p class="px-4">{{'app.switch' | translate}}</p>
-      <a (click)="selectLang('zh-CN')" class="cursor-pointer" [style.text-decoration]="currentLang === 'zh-CN' ? 'underline' : 'none'">简体中文</a>
-      <p class="px-4"> | </p>
+      <p class="px-4">{{ 'app.switch' | translate }}</p>
       <a
-        (click)="selectLang('en')" class="cursor-pointer" [style.text-decoration]="currentLang === 'en' ? 'underline' : 'none'">English</a>
+        (click)="selectLang('zh-CN')"
+        class="cursor-pointer"
+        [style.text-decoration]="currentLang === 'zh-CN' ? 'underline' : 'none'"
+        >简体中文</a
+      >
+      <p class="px-4">|</p>
+      <a
+        (click)="selectLang('en')"
+        class="cursor-pointer"
+        [style.text-decoration]="currentLang === 'en' ? 'underline' : 'none'"
+        >English</a
+      >
     </div>
   </ng-template>
 </p-menubar>

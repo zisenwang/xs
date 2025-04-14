@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
-import {Image} from 'primeng/image';
+import { Image } from 'primeng/image';
 
 @Component({
   selector: 'xs-shared-images-scroll',
-  imports: [
-    Image
-  ],
+  imports: [Image],
   templateUrl: './image-scroll.component.html',
   styleUrl: './image-scroll.component.scss',
-  standalone: true
+  standalone: true,
 })
 export class ImageScrollComponent {
   images: string[] = [
@@ -21,7 +19,6 @@ export class ImageScrollComponent {
     '/images/logo_yale.png',
     '/images/logo_stfd.png',
     '/images/logo_mit.png',
-    '/images/logo_pu.png'
+    '/images/logo_pu.png',
   ];
-
 }

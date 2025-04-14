@@ -1,12 +1,16 @@
 <!-- success-cases.component.html -->
-<section id="testimonials" class="min-h-screen bg-gradient-to-b from-gray-50 to-white ">
+<section
+  id="testimonials"
+  class="min-h-screen bg-gradient-to-b from-gray-50 to-white">
   <div class="h-8 bg-white"></div>
   <section class="min-h-screen">
-      <div class="bg-teal-400">
-        <div class="max-w-7xl mx-auto text-center py-8 px-4">
-        <h1 class="text-4xl font-bold mb-4 text-white">{{'testimonials.success stories' | translate}}</h1>
+    <div class="bg-teal-400">
+      <div class="max-w-7xl mx-auto text-center py-8 px-4">
+        <h1 class="text-4xl font-bold mb-4 text-white">
+          {{ 'testimonials.success stories' | translate }}
+        </h1>
         <p class="text-xl text-white-alpha-90">
-          {{'testimonials.slogan' | translate}}
+          {{ 'testimonials.slogan' | translate }}
         </p>
       </div>
     </div>
@@ -14,24 +18,29 @@
     <div class="h-32"></div>
     <!-- 案例轮播 -->
     <div class="px-4 max-w-7xl mx-auto mb-16">
-      <p-carousel [value]="successCases"
-                  [numVisible]="3"
-                  [numScroll]="1"
-                  [circular]="true"
-                  [autoplayInterval]="5000"
-                  [responsiveOptions]="responsiveOptions">
+      <p-carousel
+        [value]="successCases"
+        [numVisible]="3"
+        [numScroll]="1"
+        [circular]="true"
+        [autoplayInterval]="5000"
+        [responsiveOptions]="responsiveOptions">
         <ng-template pTemplate="item" let-case>
           <div class="p-4">
             <p-card styleClass="h-full">
               <ng-template pTemplate="header">
                 <div class="relative">
-                  <img [src]="case.studentImage"
-                       [alt]="case.studentName"
-                       class="w-full h-48 object-cover object-center" />
-                  <div class="absolute bottom-0 left-0 right-0 bg-black-alpha-50 p-3">
-                    <h3 class="text-xl font-bold m-0">{{case.studentName}}</h3>
+                  <img
+                    [src]="case.studentImage"
+                    [alt]="case.studentName"
+                    class="w-full h-48 object-cover object-center" />
+                  <div
+                    class="absolute bottom-0 left-0 right-0 bg-black-alpha-50 p-3">
+                    <h3 class="text-xl font-bold m-0">
+                      {{ case.studentName }}
+                    </h3>
                     <p class="text-white-alpha-90 m-0">
-                      {{case.admittedSchool}} - {{case.major}}
+                      {{ case.admittedSchool }} - {{ case.major }}
                     </p>
                   </div>
                 </div>
@@ -40,14 +49,14 @@
               <div class="space-y-4">
                 <div>
                   <h4 class="font-semibold mb-2">申请背景</h4>
-                  <p class="text-600">{{case.background}}</p>
+                  <p class="text-600">{{ case.background }}</p>
                 </div>
 
                 <p-divider></p-divider>
 
                 <div>
                   <i class="pi pi-quote-left text-primary-500 mr-2"></i>
-                  <span class="italic text-600">{{case.testimonial}}</span>
+                  <span class="italic text-600">{{ case.testimonial }}</span>
                   <i class="pi pi-quote-right text-primary-500 ml-2"></i>
                 </div>
               </div>

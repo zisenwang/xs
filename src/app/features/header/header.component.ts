@@ -1,9 +1,9 @@
-import {Component, inject, OnInit} from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { Menubar } from 'primeng/menubar';
 import { ScrollService } from '@services/index';
 import { CommonModule } from '@angular/common';
-import {TranslateModule, TranslateService} from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'xs-header',
@@ -12,16 +12,15 @@ import {TranslateModule, TranslateService} from '@ngx-translate/core';
   styleUrl: './header.component.scss',
   standalone: true,
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
   private scrollService = inject(ScrollService);
   private translate = inject(TranslateService);
 
   currentLang = this.translate.currentLang;
 
   ngOnInit() {
-    this.currentLang = this.translate.currentLang
-      || this.translate.getDefaultLang()
-      || 'zh-CN';
+    this.currentLang =
+      this.translate.currentLang || this.translate.getDefaultLang() || 'zh-CN';
   }
 
   items = [
