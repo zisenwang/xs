@@ -37,7 +37,7 @@ export class TestimonialsComponent {
   successCases: SuccessCase[] = [
     {
       studentName: '张同学',
-      studentImage: '/cambridge.png',
+      studentImage: '/images/cambridge.png',
       admittedSchool: '剑桥大学',
       major: '数学',
       background: 'GPA 3.8 | A-LEVEL | STEP',
@@ -45,7 +45,7 @@ export class TestimonialsComponent {
     },
     {
       studentName: '赵同学',
-      studentImage: '/cambridge.png',
+      studentImage: '/images/cambridge.png',
       admittedSchool: '剑桥大学',
       major: '物理',
       background: 'GPA 3.8 | A-LEVEL | STEP',
@@ -53,7 +53,7 @@ export class TestimonialsComponent {
     },
     {
       studentName: '孙同学',
-      studentImage: '/cambridge.png',
+      studentImage: '/images/cambridge.png',
       admittedSchool: '剑桥大学',
       major: '工程',
       background: 'GPA 3.8 | A-LEVEL | STEP',
@@ -61,7 +61,7 @@ export class TestimonialsComponent {
     },
     {
       studentName: '李同学',
-      studentImage: '/cambridge.png',
+      studentImage: '/images/cambridge.png',
       admittedSchool: '剑桥大学',
       major: '化学',
       background: 'GPA 3.8 | A-LEVEL | STEP',

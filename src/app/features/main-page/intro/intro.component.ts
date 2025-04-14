@@ -19,9 +19,9 @@ import {ICard} from '@shared/models';
 })
 export class IntroComponent {
   services: ICard[] = [
-    { title: 'programs.prepSub.title', description: 'programs.prepSub.slogan', image: '/lessons.png' },
-    { title: 'programs.interview.title', description: 'programs.interview.slogan', image: '/interview.png' },
-    { title: 'programs.camp.title', description: 'programs.camp.slogan', image: '/camp.png'},
-    { title: 'programs.exam.title', description: 'programs.exam.slogan', image: '/exam.png'}
+    { title: 'programs.prepSub.title', description: 'programs.prepSub.slogan', image: '/images/lessons.png' },
+    { title: 'programs.interview.title', description: 'programs.interview.slogan', image: '/images/interview.png' },
+    { title: 'programs.camp.title', description: 'programs.camp.slogan', image: '/images/camp.png'},
+    { title: 'programs.exam.title', description: 'programs.exam.slogan', image: '/images/exam.png'}
   ];
 }

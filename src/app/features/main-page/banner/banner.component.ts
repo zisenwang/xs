@@ -12,8 +12,8 @@ import {TranslatePipe} from '@ngx-translate/core';
 })
 export class BannerComponent {
   private scrollService = inject(ScrollService);
-  videoUrl = '/video_360p.mp4'
-  backgroundImageUrl = '/maxresdefault.jpg';
+  videoUrl = '/video/video_360p.mp4'
+  backgroundImageUrl = '/images/maxresdefault.jpg';
 
 
   scrollToService = () => this.scrollService.scrollToElement("intro")
