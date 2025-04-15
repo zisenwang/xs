@@ -1,4 +1,4 @@
-<p-menubar [model]="items">
+<p-menubar [model]="items" id="{{ HEADER_SECTOR }}">
   <ng-template #start>
     <a routerLink="/home">
       <img src="/images/logo.png" class="h-[70px]" alt="Logo" />
@@ -14,16 +14,16 @@
     <div class="flex">
       <p class="px-4">{{ 'app.switch' | translate }}</p>
       <a
-        (click)="selectLang('zh-CN')"
+        (click)="selectLang(LANG_ZH_CN)"
         class="cursor-pointer"
-        [style.text-decoration]="currentLang === 'zh-CN' ? 'underline' : 'none'"
+        [style.text-decoration]="currentLang === LANG_ZH_CN ? 'underline' : 'none'"
         >简体中文</a
       >
       <p class="px-4">|</p>
       <a
         (click)="selectLang('en')"
         class="cursor-pointer"
-        [style.text-decoration]="currentLang === 'en' ? 'underline' : 'none'"
+        [style.text-decoration]="currentLang === LANG_EN ? 'underline' : 'none'"
         >English</a
       >
     </div>

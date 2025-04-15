@@ -1,1 +1,1 @@
-// export * from './text.constants'
+export * from './app.constants'

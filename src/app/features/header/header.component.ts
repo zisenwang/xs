@@ -5,6 +5,8 @@ import { ScrollService } from '@services/index';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import {Router, RouterLink} from '@angular/router';
+import {HEADER_SECTOR} from '@shared/constants';
+import {LANG_EN, LANG_ZH_CN} from '@shared/constants/lang.constants';
 
 @Component({
   selector: 'xs-header',
@@ -57,4 +59,8 @@ export class HeaderComponent implements OnInit {
     this.translate.use(lang);
     this.currentLang = lang;
   }
+
+  protected readonly HEADER_SECTOR = HEADER_SECTOR;
+  protected readonly LANG_ZH_CN = LANG_ZH_CN;
+  protected readonly LANG_EN = LANG_EN;
 }
