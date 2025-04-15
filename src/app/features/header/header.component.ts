@@ -5,7 +5,7 @@ import { ScrollService } from '@services/index';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import {Router, RouterLink} from '@angular/router';
-import {HEADER_SECTOR} from '@shared/constants';
+import {HEADER_SECTOR, MAIN_PAGE} from '@shared/constants';
 import {LANG_EN, LANG_ZH_CN} from '@shared/constants/lang.constants';
 
 @Component({
@@ -63,4 +63,5 @@ export class HeaderComponent implements OnInit {
   protected readonly HEADER_SECTOR = HEADER_SECTOR;
   protected readonly LANG_ZH_CN = LANG_ZH_CN;
   protected readonly LANG_EN = LANG_EN;
+  protected readonly MAIN_PAGE = MAIN_PAGE;
 }
