@@ -16,6 +16,11 @@ import {LANG_EN, LANG_ZH_CN} from '@shared/constants/lang.constants';
   standalone: true,
 })
 export class HeaderComponent implements OnInit {
+  protected readonly HEADER_SECTOR = HEADER_SECTOR;
+  protected readonly LANG_ZH_CN = LANG_ZH_CN;
+  protected readonly LANG_EN = LANG_EN;
+  protected readonly MAIN_PAGE = MAIN_PAGE;
+
   private scrollService = inject(ScrollService);
   private translate = inject(TranslateService);
   private router = inject(Router);
@@ -60,8 +65,5 @@ export class HeaderComponent implements OnInit {
     this.currentLang = lang;
   }
 
-  protected readonly HEADER_SECTOR = HEADER_SECTOR;
-  protected readonly LANG_ZH_CN = LANG_ZH_CN;
-  protected readonly LANG_EN = LANG_EN;
-  protected readonly MAIN_PAGE = MAIN_PAGE;
+
 }
