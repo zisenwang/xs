@@ -4,11 +4,11 @@ import { Menubar } from 'primeng/menubar';
 import { ScrollService } from '@services/index';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import {Router} from '@angular/router';
+import {Router, RouterLink} from '@angular/router';
 
 @Component({
   selector: 'xs-header',
-  imports: [ButtonModule, Menubar, CommonModule, TranslateModule],
+  imports: [ButtonModule, Menubar, CommonModule, TranslateModule, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   standalone: true,
