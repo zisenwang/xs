@@ -3,5 +3,3 @@ export const HEADER_SECTOR = 'header';
 
 
 export const SCROLLING_TIMEOUT = 700
-
-export
