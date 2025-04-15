@@ -4,7 +4,6 @@ import { BusinessComponent } from '@app/features/main-page/business/business.com
 import { FooterComponent } from '@app/features/main-page/footer/footer.component';
 import { IntroComponent } from '@app/features/main-page/intro/intro.component';
 import { TestimonialsComponent } from '@app/features/main-page/testimonials/testimonials.component';
-import {filter} from 'rxjs';
 import {ScrollService} from '@shared/services';
 
 @Component({
@@ -44,7 +43,6 @@ export class MainPageContentComponent implements AfterViewInit{
 
   private scrollToSection(index: number) {
     const sectionName = this.sections[index]
-    console.log('sectionName', sectionName, 'index', index)
     const scrollSuccess = this.scrollService.scrollToElement(sectionName);
     if (scrollSuccess) {
       this.currentSectionIndex = index;
