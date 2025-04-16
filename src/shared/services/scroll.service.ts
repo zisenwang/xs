@@ -16,20 +16,20 @@ export class ScrollService {
   scrollToElement(elementId: string): Boolean {
     if (this.isScrolling) return false;
 
-    this.isScrolling = true;
     const element = document.getElementById(elementId);
-    if (element) {
-      const headerHeight = this.getHeaderHeight();
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - headerHeight;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-      setTimeout(() => {
-        this.isScrolling = false;
-      }, SCROLLING_TIMEOUT)
-    }
+    if (!element) return false;
+
+    this.isScrolling = true;
+    const headerHeight = this.getHeaderHeight();
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - headerHeight;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+    setTimeout(() => {
+      this.isScrolling = false;
+    }, SCROLLING_TIMEOUT)
 
     return true;
   }
