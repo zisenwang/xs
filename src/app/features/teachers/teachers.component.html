@@ -1,12 +1,9 @@
+<xs-shared-bg-title
+  [title]="title | translate"
+  [subtitle]="subtitle | translate"
+  [bgUrl]="bgUrl"
+></xs-shared-bg-title>
 <div class="max-w-[800px] mt-24 mx-auto font-sans">
-  <div class="text-center mb-8">
-    <div class="my-2">
-      <p class="m-0 text-orange-500 font-bold">教研为本</p>
-      <p class="m-0 text-orange-500 font-bold">接纳一个孩子就是接纳一份责任</p>
-    </div>
-    <h1 class="text-4xl font-bold mt-3">师资介绍</h1>
-  </div>
-
   <div class="flex flex-col gap-5">
     @for (t of teachers; track t.name) {
       <p-card
