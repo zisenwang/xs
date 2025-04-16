@@ -5,8 +5,7 @@ import { ScrollService } from '@services/index';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import {Router, RouterLink} from '@angular/router';
-import {HEADER_SECTOR, MAIN_PAGE} from '@shared/constants';
-import {LANG_EN, LANG_ZH_CN} from '@shared/constants/lang.constants';
+import {HEADER_SECTOR, MAIN_PAGE, LANG_ZH_CN, LANG_EN} from '@shared/constants';
 
 @Component({
   selector: 'xs-header',
@@ -41,7 +40,7 @@ export class HeaderComponent implements OnInit {
     {
       label: 'header.teachers',
       icon: 'pi pi-fw pi-user',
-      command: () => this.scrollService.scrollToElement('teacher'),
+      command: () => this.router.navigate(['/teachers']),
     },
     {
       label: 'header.programs',

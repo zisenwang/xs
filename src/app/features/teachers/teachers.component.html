@@ -1,0 +1,31 @@
+<div class="max-w-[800px] mt-24 mx-auto font-sans">
+  <div class="text-center mb-8">
+    <div class="my-2">
+      <p class="m-0 text-orange-500 font-bold">教研为本</p>
+      <p class="m-0 text-orange-500 font-bold">接纳一个孩子就是接纳一份责任</p>
+    </div>
+    <h1 class="text-4xl font-bold mt-3">师资介绍</h1>
+  </div>
+
+  <div class="flex flex-col gap-5">
+    @for (t of teachers; track t.name) {
+      <p-card
+        class="transform transition-all duration-300 hover:shadow-xl hover:bg-gray-100 hover:-translate-y-2"
+        pAnimateOnScroll
+        enterClass="animate-enter fade-in-10 slide-in-from-r-20 animate-duration-2000">
+        <div class="flex items-start gap-4 p-4">
+          <p-image
+            [src]="t.badge"
+            alt="university badge"
+            class="w-[60px] h-[60px] object-contain" />
+          <div>
+            <h3 class="m-0 mb-1 text-xl font-semibold">{{t.name}}</h3>
+            @for (line of t.details; track line) {
+              <p class="m-0 mb-1 text-sm text-gray-600">{{line}}</p>
+            }
+          </div>
+        </div>
+      </p-card>
+    }
+  </div>
+</div>
