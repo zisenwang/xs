@@ -1,17 +1,22 @@
 import { Component } from '@angular/core';
-import {BG_ABOUT_US_URL} from '@shared/constants';
+import {ABOUT_US_SUBTITLE, BG_ABOUT_US_URL, COMPANY_FULL_NAME} from '@shared/constants';
 import {Image} from 'primeng/image';
+import {BgTitleComponent} from '@shared/components/bg-title/bg-title.component';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'xs-about-us',
   imports: [
-    Image
+    Image,
+    BgTitleComponent,
+    TranslatePipe
 
   ],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss'
 })
 export class AboutUsComponent {
-
-  protected readonly BG_ABOUT_US_URL = BG_ABOUT_US_URL;
+  protected readonly bgUrl = BG_ABOUT_US_URL;
+  protected readonly title = COMPANY_FULL_NAME
+  protected readonly subtitle = ABOUT_US_SUBTITLE
 }
