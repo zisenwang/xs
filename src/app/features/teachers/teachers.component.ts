@@ -1,19 +1,15 @@
 import { Component } from '@angular/core';
-import {Card} from 'primeng/card';
-import {AnimateOnScroll} from 'primeng/animateonscroll';
-import {Image} from 'primeng/image';
 import {BgTitleComponent} from '@shared/components/bg-title/bg-title.component';
 import {BG_TEACHERS_URL, TEACHERS_SUBTITLE, TEACHERS_TITLE} from '@shared/constants';
 import {TranslatePipe} from '@ngx-translate/core';
+import {IProfile, ProfileCardListComponent} from '@shared/components/profile-card-list/profile-card-list.component';
 
 @Component({
   selector: 'xs-teachers',
   imports: [
-    Card,
-    AnimateOnScroll,
-    Image,
     BgTitleComponent,
-    TranslatePipe
+    TranslatePipe,
+    ProfileCardListComponent
   ],
   templateUrl: './teachers.component.html',
   styleUrl: './teachers.component.scss'
@@ -22,7 +18,7 @@ export class TeachersComponent {
   protected readonly title = TEACHERS_TITLE;
   protected readonly subtitle = TEACHERS_SUBTITLE;
   protected readonly bgUrl = BG_TEACHERS_URL;
-  teachers = [
+  teachers: IProfile[] = [
     {
       name: 'Dr. Kevin Chen，牛津大学工程科学硕士，固体力学及应用数学博士',
       badge: '/images/logo_oxi.png',
