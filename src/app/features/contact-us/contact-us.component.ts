@@ -20,14 +20,11 @@ export class ContactUsComponent {
   contactForm: FormGroup;
 
   tuitionOptions = [
-    'TMUA Tuition',
-    'MAT Tuition',
-    'ESAT Tuition',
-    'STEP Tuition',
-    'Oxbridge Interviews',
-    'ALevel Tuition',
-    'GCSE Tuition',
-    'UKMT Tuition (JMC, IMC, SMC)'
+    '物理工程',
+    '数学',
+    '生物',
+    '化学',
+    '经济'
   ];
 
   constructor(private fb: FormBuilder) {
