@@ -43,9 +43,9 @@ export class HeaderComponent implements OnInit {
       command: () => this.router.navigate(['/teachers']),
     },
     {
-      label: 'header.programs',
+      label: 'header.products',
       icon: 'pi pi-fw pi-cloud',
-      command: () => this.scrollService.scrollToElement('business'),
+      command: () => this.router.navigate(['/products']),
     },
     {
       label: 'header.successStories',
@@ -56,7 +56,7 @@ export class HeaderComponent implements OnInit {
       label: 'header.contactUs',
       icon: 'pi pi-fw pi-envelope',
       command: () => this.router.navigate(['/contact-us']),
-    },
+    }
   ];
 
   selectLang(lang: string) {
