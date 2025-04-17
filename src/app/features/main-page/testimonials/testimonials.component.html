@@ -2,65 +2,63 @@
 <section
   id="testimonials"
   class="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-  <section class="min-h-screen">
+  <div class="min-h-[20vh]">
     <xs-shared-bg-title
       [title]="TESTIMONIALS_SUCCESS_STORIES | translate"
       [subtitle]="TESTIMONIALS_SLOGAN | translate"
       [isScroll]="true"
-      [bgUrl]="BG_ABOUT_US_URL"></xs-shared-bg-title>
-
-    <div class="h-32"></div>
-
-    <div
-      pAnimateOnScroll
-      enterClass="animate-enter fade-in-10 animate-duration-2000"
-      class="px-4 max-w-7xl mx-auto mb-16">
-      <p-carousel
-        [value]="successCases"
-        [numVisible]="3"
-        [numScroll]="1"
-        [circular]="true"
-        [autoplayInterval]="5000"
-        [responsiveOptions]="responsiveOptions">
-        <ng-template pTemplate="item" let-case>
-          <div class="p-4">
-            <p-card styleClass="h-full">
-              <ng-template pTemplate="header">
-                <div class="relative">
-                  <img
-                    [src]="case.studentImage"
-                    [alt]="case.studentName"
-                    class="w-full h-48 object-cover object-center" />
-                  <div
-                    class="absolute bottom-0 left-0 right-0 bg-black-alpha-50 p-3">
-                    <h3 class="text-xl font-bold m-0">
-                      {{ case.studentName }}
-                    </h3>
-                    <p class="text-white-alpha-90 m-0">
-                      {{ case.admittedSchool }} - {{ case.major }}
-                    </p>
-                  </div>
-                </div>
-              </ng-template>
-
-              <div class="space-y-4">
-                <div>
-                  <h4 class="font-semibold mb-2">申请背景</h4>
-                  <p class="text-600">{{ case.background }}</p>
-                </div>
-
-                <p-divider></p-divider>
-
-                <div>
-                  <i class="pi pi-quote-left text-primary-500 mr-2"></i>
-                  <span class="italic text-600">{{ case.testimonial }}</span>
-                  <i class="pi pi-quote-right text-primary-500 ml-2"></i>
+      [bgUrl]="BG_ABOUT_US_URL">
+    </xs-shared-bg-title>
+  </div>
+  <div
+    pAnimateOnScroll
+    enterClass="animate-enter fade-in-10 animate-duration-2000"
+    class="px-4 py-16 max-w-7xl mx-auto mb-16">
+    <p-carousel
+      [value]="successCases"
+      [numVisible]="3"
+      [numScroll]="1"
+      [circular]="true"
+      [autoplayInterval]="5000"
+      [responsiveOptions]="responsiveOptions">
+      <ng-template pTemplate="item" let-case>
+        <div class="p-4">
+          <p-card styleClass="h-full">
+            <ng-template pTemplate="header">
+              <div class="relative">
+                <img
+                  [src]="case.studentImage"
+                  [alt]="case.studentName"
+                  class="w-full h-48 object-cover object-center" />
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-black-alpha-50 p-3">
+                  <h3 class="text-xl font-bold m-0">
+                    {{ case.studentName }}
+                  </h3>
+                  <p class="text-white-alpha-90 m-0">
+                    {{ case.admittedSchool }} - {{ case.major }}
+                  </p>
                 </div>
               </div>
-            </p-card>
-          </div>
-        </ng-template>
-      </p-carousel>
-    </div>
-  </section>
+            </ng-template>
+
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-semibold mb-2">申请背景</h4>
+                <p class="text-600">{{ case.background }}</p>
+              </div>
+
+              <p-divider></p-divider>
+
+              <div>
+                <i class="pi pi-quote-left text-primary-500 mr-2"></i>
+                <span class="italic text-600">{{ case.testimonial }}</span>
+                <i class="pi pi-quote-right text-primary-500 ml-2"></i>
+              </div>
+            </div>
+          </p-card>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
 </section>

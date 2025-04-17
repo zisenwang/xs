@@ -33,7 +33,7 @@ export const PRODUCTS_DETAIL: ProductItem[] = [
 理工材料
 生物化学
 经济数学
-北京修斯教育科技`
+北京修斯教育科技`,
   },
   {
     id: 'prep',
@@ -113,7 +113,7 @@ Keeler, J. and Wothers, P. (2009). 《Why chemical reactions happen》. Oxford: 
 8.   Taxation
 9.   Trade policy
 10.  Well-being and Behavioral Economics
-北京修斯教育科技`
+北京修斯教育科技`,
   },
   {
     id: 'sprint',
@@ -181,7 +181,7 @@ Keeler, J. and Wothers, P. (2009). 《Why chemical reactions happen》. Oxford: 
 8.   Taxation
 9.   Trade policy
 10.  Well-being and Behavioural Economics
-北京修斯教育科技`
+北京修斯教育科技`,
   },
   {
     id: 'interview',
@@ -240,7 +240,7 @@ Keeler, J. and Wothers, P. (2009). 《Why chemical reactions happen》. Oxford: 
 培训成果
 95% 面邀率 —— 绝大多数学员成功获得面试邀请
 30% 录取率 —— 显著高于全球平均录取水平
-北京修斯教育科技`
+北京修斯教育科技`,
   },
   {
     id: 'advanced',
@@ -285,6 +285,6 @@ Keeler, J. and Wothers, P. (2009). 《Why chemical reactions happen》. Oxford: 
 培养学生的学术能力，而非短期应试技巧
 提前适应世界顶级大学的学习方式，提高竞争力
 立扎实的学科基础，为未来深造提供保障
-北京修斯教育科技`
+北京修斯教育科技`,
   },
 ];

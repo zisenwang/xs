@@ -1,7 +1,7 @@
-import {Component, Input,} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Image } from 'primeng/image';
-import {AnimateOnScroll} from 'primeng/animateonscroll';
-import {Card} from 'primeng/card';
+import { AnimateOnScroll } from 'primeng/animateonscroll';
+import { Card } from 'primeng/card';
 
 export interface IProfile {
   name: string;
@@ -17,5 +17,5 @@ export interface IProfile {
   standalone: true,
 })
 export class ProfileCardListComponent {
-  @Input({required: true}) profile: IProfile[] = [];
+  @Input({ required: true }) profile: IProfile[] = [];
 }

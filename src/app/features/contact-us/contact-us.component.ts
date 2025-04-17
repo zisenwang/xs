@@ -1,31 +1,21 @@
 import { Component } from '@angular/core';
-import {FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms';
-import {BgTitleComponent} from '@shared/components/bg-title/bg-title.component';
-import {BG_CONTACT_US_URL, CONTACT_US_TITLE} from '@shared/constants';
-import {TranslatePipe} from '@ngx-translate/core';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { BgTitleComponent } from '@shared/components/bg-title/bg-title.component';
+import { BG_CONTACT_US_URL, CONTACT_US_TITLE } from '@shared/constants';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'xs-contact-us',
-  imports: [
-    ReactiveFormsModule,
-    BgTitleComponent,
-    TranslatePipe
-  ],
+  imports: [ReactiveFormsModule, BgTitleComponent, TranslatePipe],
   templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.scss'
+  styleUrl: './contact-us.component.scss',
 })
 export class ContactUsComponent {
   protected readonly title = CONTACT_US_TITLE;
   protected readonly bgUrl = BG_CONTACT_US_URL;
   contactForm: FormGroup;
 
-  tuitionOptions = [
-    '物理工程',
-    '数学',
-    '生物',
-    '化学',
-    '经济'
-  ];
+  tuitionOptions = ['物理工程', '数学', '生物', '化学', '经济'];
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -34,7 +24,7 @@ export class ContactUsComponent {
       tuitionFor: [''],
       trial: [''],
       email: [''],
-      message: ['']
+      message: [''],
     });
   }
 
@@ -46,5 +36,4 @@ export class ContactUsComponent {
       alert('Please complete the required fields.');
     }
   }
-
 }

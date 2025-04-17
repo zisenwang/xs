@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-import {HEADER_SECTOR, SCROLLING_TIMEOUT} from '@shared/constants';
+import { HEADER_SECTOR, SCROLLING_TIMEOUT } from '@shared/constants';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ScrollService {
-
   private isScrolling = false;
 
   private getHeaderHeight(): number {
@@ -25,11 +24,11 @@ export class ScrollService {
     const offsetPosition = elementPosition + window.scrollY - headerHeight;
     window.scrollTo({
       top: offsetPosition,
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
     setTimeout(() => {
       this.isScrolling = false;
-    }, SCROLLING_TIMEOUT)
+    }, SCROLLING_TIMEOUT);
 
     return true;
   }

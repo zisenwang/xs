@@ -10,24 +10,32 @@ export const routes: Routes = [
       ).then(m => m.MainPageContentComponent),
   },
   {
-    path:'about-us',
+    path: 'about-us',
     loadComponent: () =>
-      import('./features/about-us/about-us.component').then(m => m.AboutUsComponent),
+      import('./features/about-us/about-us.component').then(
+        m => m.AboutUsComponent
+      ),
   },
   {
-    path:'teachers',
+    path: 'teachers',
     loadComponent: () =>
-      import('./features/teachers/teachers.component').then(m => m.TeachersComponent),
+      import('./features/teachers/teachers.component').then(
+        m => m.TeachersComponent
+      ),
   },
   {
-    path:'contact-us',
+    path: 'contact-us',
     loadComponent: () =>
-      import('./features/contact-us/contact-us.component').then(m => m.ContactUsComponent),
+      import('./features/contact-us/contact-us.component').then(
+        m => m.ContactUsComponent
+      ),
   },
   {
-    path:'products',
+    path: 'products',
     loadComponent: () =>
-      import('./features/products/products.component').then(m => m.ProductsComponent),
+      import('./features/products/products.component').then(
+        m => m.ProductsComponent
+      ),
   },
   {
     path: 'success-stories',
@@ -35,5 +43,5 @@ export const routes: Routes = [
       import('./features/success-stories/success-stories.component').then(
         m => m.SuccessStoriesComponent
       ),
-  }
+  },
 ];

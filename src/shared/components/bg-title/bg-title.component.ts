@@ -1,6 +1,6 @@
-import {Component, Input,} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Image } from 'primeng/image';
-import {AnimateOnScroll} from 'primeng/animateonscroll';
+import { AnimateOnScroll } from 'primeng/animateonscroll';
 
 @Component({
   selector: 'xs-shared-bg-title',
@@ -10,8 +10,8 @@ import {AnimateOnScroll} from 'primeng/animateonscroll';
   standalone: true,
 })
 export class BgTitleComponent {
-  @Input({required: true}) title = 'title'
-  @Input({required: true}) bgUrl!: string;
+  @Input({ required: true }) title = 'title';
+  @Input({ required: true }) bgUrl!: string;
   @Input() subtitle?: string;
   @Input() isScroll = false;
 }
