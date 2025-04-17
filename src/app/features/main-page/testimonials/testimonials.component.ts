@@ -6,6 +6,8 @@ import { Carousel } from 'primeng/carousel';
 import { Divider } from 'primeng/divider';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 import { TranslatePipe } from '@ngx-translate/core';
+import {BgTitleComponent} from '@shared/components/bg-title/bg-title.component';
+import {BG_ABOUT_US_URL, TESTIMONIALS_SLOGAN, TESTIMONIALS_SUCCESS_STORIES} from '@shared/constants';
 
 interface SuccessCase {
   studentName: string;
@@ -26,6 +28,7 @@ interface SuccessCase {
     Divider,
     AnimateOnScrollModule,
     TranslatePipe,
+    BgTitleComponent,
   ],
   templateUrl: './testimonials.component.html',
   styleUrl: './testimonials.component.scss',
@@ -84,4 +87,7 @@ export class TestimonialsComponent {
       numScroll: 1,
     },
   ];
+  protected readonly BG_ABOUT_US_URL = BG_ABOUT_US_URL;
+  protected readonly TESTIMONIALS_SUCCESS_STORIES = TESTIMONIALS_SUCCESS_STORIES;
+  protected readonly TESTIMONIALS_SLOGAN = TESTIMONIALS_SLOGAN;
 }

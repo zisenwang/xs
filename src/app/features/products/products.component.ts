@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {ProductItem, PRODUCTS_DETAIL} from './products.constants';
 import {PanelMenu} from 'primeng/panelmenu';
 import {BgTitleComponent} from '@shared/components/bg-title/bg-title.component';
-import {BG_ABOUT_US_URL, PRODUCTS_TITLE} from '@shared/constants';
+import {BG_ABOUT_US_URL, HEADER_PRODUCTS} from '@shared/constants';
 import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
@@ -20,7 +20,7 @@ export class ProductsComponent {
   products: ProductItem[] = PRODUCTS_DETAIL;
   selectedProduct: ProductItem = this.products[0];
   bgUrl = BG_ABOUT_US_URL;
-  title = PRODUCTS_TITLE
+  title = HEADER_PRODUCTS
 
   selectProduct(id: string) {
     const match = this.products.find(p => p.id === id);
