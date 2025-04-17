@@ -11,7 +11,10 @@
 
     <div class="h-32"></div>
 
-    <div class="px-4 max-w-7xl mx-auto mb-16">
+    <div
+      pAnimateOnScroll
+      enterClass="animate-enter fade-in-10 animate-duration-2000"
+      class="px-4 max-w-7xl mx-auto mb-16">
       <p-carousel
         [value]="successCases"
         [numVisible]="3"
