@@ -1,13 +1,17 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-import {provideRouter, withInMemoryScrolling, withViewTransitions} from '@angular/router';
+import {
+  provideRouter,
+  withInMemoryScrolling,
+  withViewTransitions,
+} from '@angular/router';
 
 import { routes } from './app.routes';
-import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
-import {providePrimeNG} from 'primeng/config';
-import Lara from '@primeng/themes/lara'
-import {provideTranslateService, TranslateLoader} from '@ngx-translate/core';
-import {HttpClient, provideHttpClient} from '@angular/common/http';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { providePrimeNG } from 'primeng/config';
+import Lara from '@primeng/themes/lara';
+import { provideTranslateService, TranslateLoader } from '@ngx-translate/core';
+import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 const BluePreset = {
   ...Lara,
@@ -30,12 +34,13 @@ const BluePreset = {
     borderColor: 'var(--blue-500)',
     hoverColor: 'var(--blue-600)',
     hoverBackgroundColor: 'var(--blue-600)',
-    hoverBorderColor: 'var(--blue-600)'
-  }
+    hoverBorderColor: 'var(--blue-600)',
+  },
 };
 
-const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: HttpClient) =>
-  new TranslateHttpLoader(http, './i18n/', '.json');
+const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (
+  http: HttpClient
+) => new TranslateHttpLoader(http, './i18n/', '.json');
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -44,8 +49,8 @@ export const appConfig: ApplicationConfig = {
       routes,
       withViewTransitions(),
       withInMemoryScrolling({
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled'
+        scrollPositionRestoration: 'enabled',
+        anchorScrolling: 'enabled',
       })
     ),
     provideAnimationsAsync(),
@@ -53,7 +58,7 @@ export const appConfig: ApplicationConfig = {
       ripple: true,
       theme: {
         preset: BluePreset,
-      }
+      },
     }),
     provideHttpClient(),
     provideTranslateService({
@@ -62,9 +67,7 @@ export const appConfig: ApplicationConfig = {
         provide: TranslateLoader,
         useFactory: httpLoaderFactory,
         deps: [HttpClient],
-      }
-    })
+      },
+    }),
   ],
 };
-
-

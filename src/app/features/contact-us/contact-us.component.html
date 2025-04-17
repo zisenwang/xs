@@ -1,0 +1,75 @@
+<!-- contact-us.component.html -->
+<xs-shared-bg-title [title]="title | translate" [bgUrl]="bgUrl">
+</xs-shared-bg-title>
+<div class="max-w-6xl mx-auto font-sans p-10 md:flex md:gap-10">
+  <div class="flex-1/2 justify-center items-center">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6">
+      <div>
+        <div class="mb-5">
+          <label class="block mb-2">Name *</label>
+          <div class="flex gap-4">
+            <input
+              type="text"
+              formControlName="firstName"
+              placeholder="First"
+              required
+              class="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            <input
+              type="text"
+              formControlName="lastName"
+              placeholder="Last"
+              required
+              class="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <label class="block mb-2">What do you want tuition for?</label>
+        <div class="space-y-2">
+          @for (subject of tuitionOptions; track subject) {
+            <div class="flex items-center">
+              <label class="flex items-center space-x-2 cursor-pointer">
+                <input
+                  type="radio"
+                  formControlName="tuitionFor"
+                  [value]="subject"
+                  class="form-radio text-[#001f60]" />
+                <span>{{ subject }}</span>
+              </label>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="mb-5">
+        <label class="block mb-2">Email *</label>
+        <input
+          type="email"
+          formControlName="email"
+          required
+          class="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+      </div>
+
+      <div class="mb-5">
+        <label class="block mb-2">Message</label>
+        <textarea
+          formControlName="message"
+          rows="4"
+          class="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="bg-[#001f60] text-white px-6 py-2 rounded hover:bg-[#002f90] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+        Submit
+      </button>
+    </form>
+  </div>
+  <div class="flex-1 justify-center items-center">
+    <span>联系客服微信</span>
+    <img src="/images/hills_wechat_qr.png" />
+    <div>电话：123456789</div>
+    <div>邮箱：admin&#64;hillsedtech.com</div>
+  </div>
+</div>

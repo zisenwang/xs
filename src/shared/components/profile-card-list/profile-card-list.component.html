@@ -1,0 +1,21 @@
+<section class="flex flex-col gap-5">
+  @for (p of profile; track p.name) {
+    <p-card
+      class="transform transition-all duration-300 hover:shadow-xl hover:bg-gray-100 hover:-translate-y-2"
+      pAnimateOnScroll
+      enterClass="animate-enter fade-in-10 slide-in-from-r-20 animate-duration-2000">
+      <div class="flex items-start gap-4 p-4">
+        <p-image
+          [src]="p.badge"
+          alt="university badge"
+          class="w-[60px] h-[60px] object-contain" />
+        <div>
+          <h3 class="m-0 mb-1 text-xl font-semibold">{{ p.name }}</h3>
+          @for (line of p.details; track line) {
+            <p class="m-0 mb-1 text-sm text-gray-600">{{ line }}</p>
+          }
+        </div>
+      </div>
+    </p-card>
+  }
+</section>

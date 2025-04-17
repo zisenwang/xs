@@ -1,0 +1,18 @@
+<xs-shared-bg-title [title]="title | translate" [bgUrl]="bgUrl">
+  fa
+</xs-shared-bg-title>
+<div
+  class="flex min-h-[80vh] max-w-6xl mt-24 mx-auto font-sans p-5 box-border animate-enter fade-in-10 animate-duration-2000">
+  <!-- Sidebar -->
+  <div class="w-60 mr-5">
+    <p-panelMenu [model]="model"></p-panelMenu>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex-1 bg-gray-50 p-5 rounded-lg overflow-y-auto max-h-[80vh]">
+    <h2 class="text-xl font-semibold">{{ selectedProduct.title }}</h2>
+    <div
+      class="whitespace-pre-line leading-[1.8]"
+      [innerHTML]="selectedProduct.content"></div>
+  </div>
+</div>

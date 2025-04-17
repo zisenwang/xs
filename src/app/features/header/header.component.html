@@ -1,0 +1,39 @@
+<section
+  id="{{ HEADER_SECTOR }}"
+  class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300">
+  <p-menubar [model]="items">
+    <ng-template #start>
+      <a routerLink="{{ MAIN_PAGE }}">
+        <img src="/images/logo.png" class="h-[70px]" alt="Logo" />
+      </a>
+    </ng-template>
+    <ng-template #item let-item let-root="root">
+      <div class="p-4">
+        <i [class]="item.icon"></i>
+        <span>{{ item.label | translate }}</span>
+      </div>
+    </ng-template>
+    <ng-template #end>
+      <div class="flex">
+        <p class="px-4">{{ 'app.switch' | translate }}</p>
+        <a
+          (click)="selectLang(LANG_ZH_CN)"
+          class="cursor-pointer"
+          [style.text-decoration]="
+            currentLang === LANG_ZH_CN ? 'underline' : 'none'
+          "
+          >简体中文</a
+        >
+        <p class="px-4">|</p>
+        <a
+          (click)="selectLang('en')"
+          class="cursor-pointer"
+          [style.text-decoration]="
+            currentLang === LANG_EN ? 'underline' : 'none'
+          "
+          >English</a
+        >
+      </div>
+    </ng-template>
+  </p-menubar>
+</section>

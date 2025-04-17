@@ -1,12 +1,13 @@
 {
   "app": {
     "title": "Hills Education & Technology",
-    "switch": "Switch to: "
+    "switch": "Switch to: ",
+    "company full name": "Beijing Hills Education & Technology"
   },
   "header": {
     "aboutUs": "About Us",
     "teachers": "Our Teachers",
-    "programs": "Our Programs",
+    "products": "Our Programs",
     "successStories": "Success Stories",
     "contactUs": "Contact Us"
   },
@@ -34,7 +35,7 @@
     }
   },
   "testimonials": {
-    "success stories": "Success Stories",
+    "successStories": "Success Stories",
     "slogan": "Explore Real Stories of How We Help Students Achieve Their Dreams"
   },
   "business": {
@@ -63,8 +64,13 @@
       "success": {
         "title": "Success Stories",
         "desc": "Comprehensive analysis of standardized tests like SAT, ACT, and AP, providing targeted preparation strategies and timeline planning to help you achieve your desired scores."
-
       }
     }
+  },
+  "about us": {
+    "subtitle": "Elite Programs · Academic Excellence · Global Perspective"
+  },
+  "teachers": {
+    "subtitle": "Research-led Education - Welcoming a student means embracing a responsibility"
   }
 }

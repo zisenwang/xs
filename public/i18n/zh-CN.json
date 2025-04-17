@@ -1,12 +1,13 @@
 {
   "app": {
     "title": "修斯国际教育",
-    "switch": "切换为："
+    "switch": "切换为：",
+    "company full name": "北京修斯教育科技"
   },
   "header": {
     "aboutUs": "公司介绍",
     "teachers": "教师介绍",
-    "programs": "产品介绍",
+    "products": "产品介绍",
     "successStories": "成功案例",
     "contactUs": "联系我们"
   },
@@ -34,7 +35,7 @@
     }
   },
   "testimonials": {
-    "success stories": "成功案例展示",
+    "successStories": "成功案例展示",
     "slogan": "探索我们帮助学子们实现梦想的真实故事"
   },
   "business": {
@@ -63,8 +64,13 @@
       "success": {
         "title": "名校学生画像",
         "desc": "基于多年教学经验，量身定制个性化学习方案，结合线上线下混合教学模式，确保学习效果最大化。"
-
       }
     }
+  },
+  "about us": {
+    "subtitle": "精英课程 · 学术提升 · 国际化视野"
+  },
+  "teachers": {
+    "subtitle": "教研为本——接受一位孩子就是接受一份责任"
   }
 }

@@ -1,6 +1,7 @@
-<div class="relative w-full h-screen overflow-hidden">
+<section class="relative w-full h-screen overflow-hidden" id="banner">
   <!-- hero section -->
-  <div class="fixed top-0 left-0 w-full h-screen bg-cover bg-center bg-no-repeat -z-10">
+  <div
+    class="fixed top-0 left-0 w-full h-screen bg-cover bg-center bg-no-repeat -z-10">
     <!--  overlay  -->
     <div class="absolute inset-0 bg-black/60 z-10"></div>
     <video
@@ -11,27 +12,28 @@
       onloadedmetadata="this.muted = true"
       playsinline
       webkit-playsinline
-      [src]="videoUrl">
-    </video>
+      [src]="videoUrl"></video>
     <!-- static background img to transit loading video -->
-    <div class="absolute inset-0 -z-15 bg-cover bg-no-repeat bg-center"
-         [style.backgroundImage]="'url(' + backgroundImageUrl + ')'"
-
-    ></div>
+    <div
+      class="absolute inset-0 -z-15 bg-cover bg-no-repeat bg-center"
+      [style.backgroundImage]="'url(' + backgroundImageUrl + ')'"></div>
   </div>
 
   <!-- Banner Content -->
-  <div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center justify-center text-white">
-    <h1 class="text-5xl md:text-7xl font-bold mb-6">{{ 'banner.educationFirst' | translate}}</h1>
-    <p class="text-xl md:text-2xl mb-12">{{ 'banner.slogan' | translate}}</p>
+  <div
+    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center justify-center text-white text-nowrap">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+      {{ 'banner.educationFirst' | translate }}
+    </h1>
+    <p class="text-xl md:text-2xl mb-12">{{ 'banner.slogan' | translate }}</p>
   </div>
   <!-- Scroll more -->
   <div class="absolute bottom-10 w-full flex justify-center animate-bounce">
     <button
       class="text-white flex flex-col items-center gap-2"
       (click)="scrollToService()">
-      <span class="text-sm">{{ 'banner.more' | translate}}</span>
+      <span class="text-sm">{{ 'banner.more' | translate }}</span>
       <i class="pi pi-chevron-down text-2xl"></i>
     </button>
   </div>
-</div>
+</section>

@@ -1,0 +1,37 @@
+@if (isScroll) {
+  <header
+    pAnimateOnScroll
+    enterClass="animate-enter fade-in-10 animate-duration-2000"
+    class="relative bg-cover bg-center bg-no-repeat mt-24 pb-8 text-center font-sans">
+    <p-image
+      [src]="bgUrl"
+      alt="About us"
+      imageClass="absolute w-full h-50 object-cover z-5"></p-image>
+    <div class="pt-16 relative z-10 text-white flex item-center justify-center">
+      <h1 class="text-5xl mb-6 flex-1 justify-center">
+        {{ title }}
+      </h1>
+      <p class="pt-12 text-xl flex-1">
+        {{ subtitle }}
+      </p>
+    </div>
+  </header>
+}
+
+@if (!isScroll) {
+  <header
+    class="relative bg-cover bg-center bg-no-repeat mt-24 pb-8 text-center font-sans animate-enter fade-in-10 animate-duration-2000">
+    <p-image
+      [src]="bgUrl"
+      alt="About us"
+      imageClass="absolute w-full h-50 object-cover z-5"></p-image>
+    <div class="pt-16 relative z-10 text-white flex item-center justify-center">
+      <h1 class="text-5xl mb-6 flex-1 justify-center">
+        {{ title }}
+      </h1>
+      <p class="pt-12 text-xl flex-1">
+        {{ subtitle }}
+      </p>
+    </div>
+  </header>
+}
