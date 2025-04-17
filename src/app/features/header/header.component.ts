@@ -55,7 +55,7 @@ export class HeaderComponent implements OnInit {
     {
       label: 'header.contactUs',
       icon: 'pi pi-fw pi-envelope',
-      command: () => this.scrollService.scrollToElement('contact'),
+      command: () => this.router.navigate(['/contact-us']),
     },
   ];
 

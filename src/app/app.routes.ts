@@ -18,5 +18,10 @@ export const routes: Routes = [
     path:'teachers',
     loadComponent: () =>
       import('./features/teachers/teachers.component').then(m => m.TeachersComponent),
+  },
+  {
+    path:'contact-us',
+    loadComponent: () =>
+      import('./features/contact-us/contact-us.component').then(m => m.ContactUsComponent),
   }
 ];

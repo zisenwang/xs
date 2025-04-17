@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 import {ABOUT_US_SUBTITLE, BG_ABOUT_US_URL, COMPANY_FULL_NAME} from '@shared/constants';
-import {Image} from 'primeng/image';
 import {BgTitleComponent} from '@shared/components/bg-title/bg-title.component';
 import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   selector: 'xs-about-us',
   imports: [
-    Image,
     BgTitleComponent,
     TranslatePipe
 
