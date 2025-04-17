@@ -50,7 +50,7 @@ export class HeaderComponent implements OnInit {
     {
       label: 'header.successStories',
       icon: 'pi pi-fw pi-comments',
-      command: () => this.scrollService.scrollToElement('testimonials'),
+      command: () => this.router.navigate(['/success-stories']),
     },
     {
       label: 'header.contactUs',
