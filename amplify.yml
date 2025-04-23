@@ -7,7 +7,7 @@ frontend:
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
     build:
       commands:
-        - npm run build
+        - npm run build:prod
   artifacts:
     baseDirectory: dist/xiusi/browser
     files:
@@ -15,23 +15,3 @@ frontend:
   cache:
     paths:
       - .npm/**/*
-  customHeaders:
-    - pattern: '**/*.mp4'
-      headers:
-        - key: 'Content-Type'
-          value: 'video/mp4'
-        - key: 'Accept-Ranges'
-          value: 'bytes'
-    - pattern: '**/*'
-      headers:
-        - key: 'Cache-Control'
-          value: 'max-age=0,no-cache,no-store,must-revalidate'
-  customRules:
-    - pattern: '</^[^.]+$|\.(?!(css|gif|ico|jpg|js|png|txt|svg|woff|woff2|ttf|map|json|mp4)$)([^.]+$)/>'
-      target: '/index.html'
-      status: '200'
-      condition: null
-    - source: '/api/<*>'
-      target: '/api/<*>'
-      status: '200'
-
