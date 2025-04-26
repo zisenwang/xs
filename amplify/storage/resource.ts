@@ -1,4 +1,4 @@
-// amplify/storage/resource.ts
+// amplify/storage/email.resource.ts
 import { defineStorage } from '@aws-amplify/backend';
 
 export const storage = defineStorage({
