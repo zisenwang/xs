@@ -4,15 +4,14 @@ import {SendEmailCommand, SESClient} from '@aws-sdk/client-ses';
 const sesClient = new SESClient({ region: "ap-southeast-2"});
 
 export const handler: Schema['sendEmail']['functionHandler'] = async (event) => {
-  const {lastName, firstName, subjects, email, message} = event.arguments.params!;
-  const sender = "contact@hillsedtech.com"
+  const { name, subjects, contactDetail, message} = event.arguments.params!;
+  const sender = `"Contact Hills" <contact@hillsedtech.com>`
   const recipient = "jasonwang@hillsedtech.com"
   const subject = "Test From Amplify SDK"
   const body = `Test From Amplify SDK
-LastName: ${ lastName }
-FirstName: ${ firstName }
+Name: ${ name }
 Subject: ${ subjects }
-Email: ${ email }
+Contact Detail: ${ contactDetail }
 Message: ${ message }`
 
   const command = new SendEmailCommand({

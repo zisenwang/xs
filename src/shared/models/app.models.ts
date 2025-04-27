@@ -3,3 +3,8 @@ export interface ICard {
   description?: string;
   image?: string;
 }
+
+export interface INameValuePair {
+  name: string;
+  value: string;
+}

@@ -17,8 +17,8 @@
         <label class="block">What do you want tuition for?</label>
         @for (subject of tuitionOptions; track subject) {
           <div class="flex items-center">
-            <p-checkbox [inputId]="subject" [value]="subject" formControlName="subjects"></p-checkbox>
-            <label [for]="subject" class="ml-2">{{ subject }}</label>
+            <p-checkbox [inputId]="subject.name" [value]="subject.value" formControlName="subjects"></p-checkbox>
+            <label [for]="subject.name" class="ml-2">{{ subject.name | translate }}</label>
           </div>
         }
       </div>

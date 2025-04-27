@@ -9,3 +9,9 @@ export const CONTACT_US_TITLE = 'header.contactUs';
 export const HEADER_PRODUCTS = 'header.products';
 export const TESTIMONIALS_SUCCESS_STORIES = 'testimonials.successStories';
 export const TESTIMONIALS_SLOGAN = 'testimonials.slogan';
+
+export const APP_SUBJECTS_ENGINEERING_PHYSICS = 'app.subjects.engineeringPhysics';
+export const APP_SUBJECTS_MATHS = 'app.subjects.maths';
+export const APP_SUBJECTS_ECONOMY = 'app.subjects.economy';
+export const APP_SUBJECTS_CHEMISTRY = 'app.subjects.chemistry';
+export const APP_SUBJECTS_BIOLOGY = 'app.subjects.biology';

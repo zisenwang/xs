@@ -3,10 +3,9 @@ import { sendEmail } from '../function/email/email.resource'
 
 const schema = a.schema({
   ContactUsParam: a.customType({
-    firstName: a.string(),
-    lastName: a.string(),
+    name: a.string(),
     subjects: a.json(),
-    email: a.email(),
+    contactDetail: a.string(),
     message: a.string(),
   }),
   sendEmail: a
