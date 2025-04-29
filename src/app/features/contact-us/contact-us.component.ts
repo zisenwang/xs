@@ -56,19 +56,29 @@ export class ContactUsComponent {
 
     try {
       const params = { ...this.contactForm.value, subjects: JSON.stringify(this.contactForm.value.subjects)  }
-      const {data, errors} = await this.client.queries.sendEmail({
-        params,
-      })
-      console.log(data, errors)
-      if (errors) {
-        this.popErrorMessage(errors[0].message)
-      }
-      if (!errors) {
-        this.popSuccessMessage()
-      }
+      await this.sendEmail(params);
+      await this.addMessage(params);
+      this.popSuccessMessage();
+      this.contactForm.reset();
     } catch (error) {
       console.log(error);
       this.popErrorMessage(error as string)
+    }
+  }
+
+
+  private async addMessage(params: typeof this.contactForm.value){
+    const {errors} = await this.client.models.ConsultMessage.create({...params, timestamp: new Date().toISOString(), done: false});
+    if (errors) {
+      throw new Error(errors[0].message);
+    }
+  }
+  private async sendEmail(params: typeof this.contactForm.value){
+    const {errors} = await this.client.queries.sendEmail({
+      params
+    })
+    if (errors) {
+      throw new Error(errors[0].message);
     }
   }
 

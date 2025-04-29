@@ -15,7 +15,17 @@ const schema = a.schema({
     })
     .returns(a.string())
     .authorization((allow) => [allow.guest()])
-    .handler(a.handler.function(sendEmail))
+    .handler(a.handler.function(sendEmail)),
+
+  ConsultMessage: a.model({
+    timestamp: a.datetime(),
+    name: a.string(),
+    subjects: a.json(),
+    contactDetail: a.string(),
+    message: a.string(),
+    done: a.boolean(),
+  })
+    .authorization((allow) => [allow.guest()])
 })
 
 export type Schema = ClientSchema<typeof schema>;
