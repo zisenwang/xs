@@ -24,10 +24,26 @@
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="contactDetail" class="block"><span class="text-red-500">*</span>Contact Detail</label>
-        <input type="text" pInputText id="contactDetail" placeholder="Required" [ngClass]="{'ng-invalid ng-dirty': (contactForm.get('contactDetail')?.invalid && contactForm.get('contactDetail')?.touched)}" formControlName="contactDetail"/>
-        @if (contactForm.get('contactDetail')?.invalid && contactForm.get('contactDetail')?.touched){
-          <p-message severity="error" variant="simple" size="small">Contact Detail is required</p-message>
+        <label for="phone" class="block"><span class="text-red-500">*</span>Phone</label>
+        <input type="number" pInputText id="phone" placeholder="Required" [ngClass]="{'ng-invalid ng-dirty': (contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched)}" formControlName="phone"/>
+        @if (contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched){
+          <p-message severity="error" variant="simple" size="small">Phone is required</p-message>
+        }
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label for="wechat" class="block"><span class="text-red-500">*</span>WeChat</label>
+        <input type="text" pInputText id="wechat" placeholder="Required" [ngClass]="{'ng-invalid ng-dirty': (contactForm.get('wechat')?.invalid && contactForm.get('wechat')?.touched)}" formControlName="wechat"/>
+        @if (contactForm.get('wechat')?.invalid && contactForm.get('wechat')?.touched){
+          <p-message severity="error" variant="simple" size="small">WeChat is required</p-message>
+        }
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <label for="email" class="block">Email</label>
+        <input type="text" pInputText id="email" [ngClass]="{'ng-invalid ng-dirty': (contactForm.get('email')?.invalid && contactForm.get('email')?.touched)}" formControlName="email"/>
+        @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched){
+          <p-message severity="error" variant="simple" size="small">Email is invalid</p-message>
         }
       </div>
 
@@ -43,7 +59,6 @@
 
     <p-message severity="info" size="large" text="联系客服微信"/>
     <img alt="wechat" src="/images/hills_wechat_qr.png" class="w-full"/>
-    <div>电话：123456789</div>
     <div>邮箱：contact&#64;hillsedtech.com</div>
   </div>
 </div>

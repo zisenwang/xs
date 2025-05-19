@@ -5,7 +5,9 @@ const schema = a.schema({
   ContactUsParam: a.customType({
     name: a.string(),
     subjects: a.json(),
-    contactDetail: a.string(),
+    email: a.string(),
+    phone: a.string(),
+    wechat: a.string(),
     message: a.string(),
   }),
   sendEmail: a
@@ -21,7 +23,9 @@ const schema = a.schema({
     timestamp: a.datetime(),
     name: a.string(),
     subjects: a.json(),
-    contactDetail: a.string(),
+    email: a.string(),
+    phone: a.string(),
+    wechat: a.string(),
     message: a.string(),
     done: a.boolean(),
   })

@@ -40,7 +40,9 @@ export class ContactUsComponent {
   contactForm: FormGroup = this.fb.group({
     name: ['', Validators.required],
     subjects: [''],
-    contactDetail: ['', Validators.required],
+    wechat:['', Validators.required],
+    phone: ['', Validators.required],
+    email: ['', Validators.email],
     message: [''],
   });
   client = generateClient<Schema>();

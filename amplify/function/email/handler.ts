@@ -4,13 +4,15 @@ import {SendEmailCommand, SESClient} from '@aws-sdk/client-ses';
 const sesClient = new SESClient({ region: "ap-southeast-2"});
 
 export const handler: Schema['sendEmail']['functionHandler'] = async (event) => {
-  const { name, subjects, contactDetail, message} = event.arguments.params!;
+  const { name, subjects, phone, email, wechat, message} = event.arguments.params!;
   const sender = `"Contact Hills" <contact@hillsedtech.com>`
   const recipient = "ketang@hillsedtech.com"
   const subject = "New Message from Contact Hills"
   const body = `Name: ${ name }
 Subject: ${ subjects }
-Contact Detail: ${ contactDetail }
+Phone: ${ phone }
+Email: ${ email }
+Wechat: ${ wechat }
 Message: ${ message }`
 
   const command = new SendEmailCommand({
