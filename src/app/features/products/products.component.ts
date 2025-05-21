@@ -4,10 +4,11 @@ import { PanelMenu } from 'primeng/panelmenu';
 import { BgTitleComponent } from '@shared/components/bg-title/bg-title.component';
 import { BG_ABOUT_US_URL, HEADER_PRODUCTS } from '@shared/constants';
 import { TranslatePipe } from '@ngx-translate/core';
+import {Panel} from 'primeng/panel';
 
 @Component({
   selector: 'xs-products',
-  imports: [PanelMenu, BgTitleComponent, TranslatePipe],
+  imports: [PanelMenu, BgTitleComponent, TranslatePipe, Panel],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',
 })
