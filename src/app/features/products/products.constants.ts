@@ -8,112 +8,247 @@ export const PRODUCTS_DETAIL: ProductItem[] = [
   {
     id: 'foundation',
     title: '牛剑基础营',
-    content: `2025年牛剑基础营
-集训营概述
-本集训营旨在帮助有志于申请牛津、剑桥及帝国理工的学生高效学习和提升学术能力。其中数学作为大部分学科的逻辑根基，是最重要的学科。为确保学生能够最大程度地适应以后各个学科的加速学习，特推出此基础营。所有课程均为全英文授课。师资为全牛剑本硕，老师均以高标准要求：三年及以上教龄，有牛剑成功学生经验，有独立编写整合知识教案能力，全英文大班授课能力，授课具有一定的幽默感，逻辑清晰，具有较强的教学兴趣和责任感。
-牛剑基础营简介
-牛剑基础营专为初三年级升高一年级，或者两年制GCSE第二年的学生定制。课程目标提前 适应整个国际高中课程的节奏，整个课程以自然科学中的应用数学教学为主。全英文授课，提前让学生适应具体的英语环境中的数学的书写和表达习惯。
-适应人群
-初三升高一，或者GCSE课程第一年进第二年的学生。
-对理工科有兴趣，希望进入G5名校的学生
-课程安排
-开课时间：2025.7.9-2025.7.23
-上午：系统性授课
-下午：练习与测试。
-结营测试：评估学生学习成果。
-教学内容
-• 覆盖所有科学数学（物理化学生物经济）所必备的数学内容。
-• 具体内容：向量，微积分，微分方向，基础统计。
-教学目标
-整个教学将分为三个组别进行，以下是每个组别的集训目标和集训内容概况
-理工材料组：其数学内容旨在培养学生的空间思维能力、代数运算能力、微积分初步。(蓝本纲为ESAT+科学应用数学)
-生物化学组：其数学内容旨在培养学生计算能力、代数能力、统计概率能力。(蓝本纲为ESAT)
-数学经济组：其数学主要针对于博弈论、数论、逻辑学和统计。（蓝本纲为TMUA）
-课表安排
-理工材料
-生物化学
-经济数学
-北京修斯教育科技`,
+    content: `
+<div class="course-detail">
+  <h1 class="text-2xl font-bold mb-4">2025年牛剑基础营</h1>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">集训营概述</h2>
+    <p>本集训营旨在帮助有志于申请牛津、剑桥及帝国理工的学生高效学习和提升学术能力。其中数学作为大部分学科的逻辑根基，是最重要的学科。为确保学生能
+    够最大程度地适应以后各个学科的加速学习，特推出此基础营。所有课程均为全英文授课。师资为全牛剑本硕，老师均以高标准要求：三年及以上教龄，有牛剑成
+    功学生经验，有独立编写整合知识教案能力，全英文大班授课能力，授课具有一定的幽默感，逻辑清晰，具有较强的教学兴趣和责任感。 </p>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">牛剑基础营简介</h2>
+    <p>牛剑基础营专为初三年级升高一年级，或者两年制GCSE第二年的学生定制。课程目标提前 适应整个国际高中课程的节奏，整个课程以自然科学中的应用数学
+    教学为主。全英文授课，提前让学生适应具体的英语环境中的数学的书写和表达习惯。</p>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">适应人群</h2>
+    <ul class="list-disc px-8">
+      <li>初三升高一，或者GCSE课程第一年进第二年的学生</li>
+      <li>对理工科有兴趣，希望进入G5名校的学生</li>
+    </ul>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">课程安排</h2>
+    <ul class="list-disc px-8">
+      <li>开课时间：2025.7.9-2025.7.23</li>
+      <li>上午：系统性授课</li>
+      <li>下午：练习与测试</li>
+      <li>结营测试：评估学生学习成果</li>
+    </ul>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">教学内容</h2>
+    <ul class="list-disc px-8">
+      <li>覆盖所有科学数学（物理化学生物经济）所必备的数学内容。</li>
+      <li>具体内容：向量，微积分，微分方向，基础统计。</li>
+    </ul>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">教学目标</h2>
+    <p>整个教学将分为三个组别进行，以下是每个组别的集训目标和集训内容概况</p>
+    <ul class="list-disc px-8">
+      <li>整个教学将分为三个组别进行，以下是每个组别的集训目标和集训内容概况  </li>
+      <li>生物化学组：其数学内容旨在培养学生计算能力、代数能力、统计概率能力。(蓝本纲为ESAT)</li>
+      <li>数学经济组：其数学主要针对于博弈论、数论、逻辑学和统计。（蓝本纲为TMUA）</li>
+    </ul>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">课表安排</h2>
+    <h3 class="text-l font-semibold mb-3">理工材料</h3>
+    <table class="table-auto w-full border-1 border-collapse mb-3">
+      <thead class="border-1">
+        <tr><td class="border-1 px-4"></td><td class="border-1 text-center">主题</td><td class="border-1 text-center">核心知识点</td></tr>
+      </thead>
+      <tbody>
+        <tr><td class="border-1 px-4">1</td><td class="border-1 px-2">向量与几何</td><td class="border-1 px-2">向量加、数量积与投影、向量几何应用（平面几何问题）、向量叉积定义（仅几何意义）</td></tr>
+        <tr><td class="border px-4">2</td><td class="border px-2">基础方程</td><td class="border px-2">一元三次方程、圆、圆方程、基础二次方程复习、不等式方程。</td></tr>
+        <tr><td class="border px-4">3</td><td class="border px-2">指数与对数</td><td class="border px-2">指数函数、对数函数、换底原则。</td></tr>
+        <tr><td class="border px-4">4</td><td class="border px-2">函数、指数与对数</td><td class="border px-2">函数定义域/值域、复合函数、反函数、二次函数图像与顶点式、指数/对数函数图像及变换。</td></tr>
+        <tr><td class="border px-4">5</td><td class="border px-2">三角函数与弧度制</td><td class="border px-2">弧度制转换、全部三角函数、正弦定理/余弦定理、三角恒等式证明、二倍角公式。</td></tr>
+        <tr><td class="border px-4">6</td><td class="border px-2">微积分基础1</td><td class="border px-2">导数定义与几何意义、幂函数导数、链式法则、单调性、二阶微分、极值判定。</td></tr>
+        <tr><td class="border px-4">7</td><td class="border px-2">微积分基础2</td><td class="border px-2">指数/对数函数微分、乘/除法法则、不定积分公式、定积分几何意义、梯形法则近似积分。</td></tr>
+        <tr><td class="border px-4">8</td><td class="border px-2">微积分基础3</td><td class="border px-2">特殊积分方法。</td></tr>
+        <tr><td class="border px-4">9</td><td class="border px-2">数列与级数</td><td class="border px-2">等差/等比数列求和、收敛性判定、二项式展开（含分数指数）。</td></tr>
+        <tr><td class="border px-4">10</td><td class="border px-2">排列与组合</td><td class="border px-2">排列组合趣题、二项式展开。</td></tr>
+        <tr><td class="border px-4">11</td><td class="border px-2">麦克劳伦与泰勒展开初步</td><td class="border px-2">麦克劳伦与泰勒展开初步、使用泰勒展开法对方程估值、牛顿拉夫逊估值法。</td></tr>
+        <tr><td class="border px-4">12</td><td class="border px-2">复数与极坐标</td><td class="border px-2">复数四则运算、极坐标表示、棣莫弗定理、复数几何意义（旋转与缩放）。</td></tr>
+        <tr><td class="border px-4">13</td><td class="border px-2">微分方程1</td><td class="border px-2">分离变量法、一阶线性微分方程、数值解法（欧拉法）。</td></tr>
+        <tr><td class="border px-4">14</td><td class="border px-2">微分方程2</td><td class="border px-2">齐次/非齐次二阶微分方程。</td></tr>
+        <tr><td class="border px-4">15</td><td class="border px-2">概率与统计基础</td><td class="border px-2">概率公理、条件概率与独立性、离散随机变量期望/方差、二项分布。</td></tr>
+
+      </tbody>
+    </table>
+    <h3 class="text-l font-semibold mb-3">生物化学</h3>
+    <table class="table-auto w-full border-1 border-collapse mb-3">
+      <thead class="border-1">
+        <tr><td class="border-1 px-4"></td><td class="border-1 text-center">主题</td><td class="border-1 text-center">核心知识点</td></tr>
+      </thead>
+      <tbody>
+        <tr><td class="border px-4">1</td><td class="border px-2">基础方程</td><td class="border px-2">一元三次方程、圆、圆方程、基础二次方程复习、不等式方程。</td></tr>
+        <tr><td class="border px-4">2</td><td class="border px-2">函数</td><td class="border px-2">函数定义域/值域、复合函数、反函数、二次函数图像与顶点式、三次函数初步。</td></tr>
+        <tr><td class="border px-4">3</td><td class="border px-2">指数与对数</td><td class="border px-2">指数与对数、换底公式、指数/对数函数图像及变换。</td></tr>
+        <tr><td class="border px-4">4</td><td class="border px-2">三角函数与弧度制</td><td class="border px-2">弧度制转换、全部三角函数、正弦定理/余弦定理、三角恒等式证明、二倍角公式。</td></tr>
+        <tr><td class="border px-4">5</td><td class="border px-2">微分基础1</td><td class="border px-2">导数定义与几何意义、幂函数导数、链式法则、单调性、二阶微分、极值判定。</td></tr>
+        <tr><td class="border px-4">6</td><td class="border px-2">微分基础2、积分</td><td class="border px-2">指数/对数函数微分、乘/除法法则、不定积分公式、定积分几何意义、梯形法则近似积分。</td></tr>
+        <tr><td class="border px-4">7</td><td class="border px-2">排列与组合</td><td class="border px-2">排列组合趣题、二项式展开。</td></tr>
+        <tr><td class="border px-4">8</td><td class="border px-2">向量</td><td class="border px-2">向量加减法、数量积与投影、向量几何应用（平面几何问题）、向量叉积定义（仅几何意义）。</td></tr>
+        <tr><td class="border px-4">9</td><td class="border px-2">概率与统计基础</td><td class="border px-2">概率公理、条件概率与独立性、离散随机变量期望/方差、二项分布。</td></tr>
+        <tr><td class="border px-4">10</td><td class="border px-2">统计1</td><td class="border px-2">连续随机变量、概率密度函数。</td></tr>
+        <tr><td class="border px-4">11</td><td class="border px-2">统计2</td><td class="border px-2">正态分布性质、线性回归和相关系数分析。</td></tr>
+        <tr><td class="border px-4">12</td><td class="border px-2">数论与证明技巧</td><td class="border px-2">质数性质、同余定理、数学归纳法、反证法应用、鸽巢原理。</td></tr>
+        <tr><td class="border px-4">13</td><td class="border px-2">复数与极坐标</td><td class="border px-2">复数四则运算、极坐标表示、棣莫弗定理、复数几何意义（旋转与缩放）。</td></tr>
+        <tr><td class="border px-4">14</td><td class="border px-2">一阶微分方程建模</td><td class="border px-2">分离变量法、一阶线性微分方程、数值解法（欧拉法）。</td></tr>
+        <tr><td class="border px-4">15</td><td class="border px-2">科学数学专讲1</td><td class="border px-2">生物学数据题数学解析（遗传概率计算、生长曲线拟合）。</td></tr>
+      </tbody>
+    </table>
+    <h3 class="text-l font-semibold mb-3">经济数学</h3>
+    <table class="table-auto w-full border-1 border-collapse mb-3">
+      <thead class="border-1">
+        <tr><td class="border-1 px-4"></td><td class="border-1 text-center">主题</td><td class="border-1 text-center">核心知识点</td></tr>
+      </thead>
+      <tbody>
+        <tr><td class="border px-4">1</td><td class="border px-2">集合</td><td class="border px-2">集合（数集）、集合运算（并交补）、复杂抽屉原理。</td></tr>
+        <tr><td class="border px-4">2</td><td class="border px-2">逻辑</td><td class="border px-2">命题逻辑（真值表、充分必要条件、逆否命题）、逻辑等价性证明。</td></tr>
+        <tr><td class="border px-4">3</td><td class="border px-2">方程与函数</td><td class="border px-2">一元二次方程、一元三次方程、二次函数图像与顶点式、圆方程。</td></tr>
+        <tr><td class="border px-4">4</td><td class="border px-2">三角函数与弧制</td><td class="border px-2">弧度制转换、全部三角函数、正弦定理/余弦定理、三角恒等式证明、二倍角公式。</td></tr>
+        <tr><td class="border px-4">5</td><td class="border px-2">指数和对数</td><td class="border px-2">指数函数、对数函数、换底原则。</td></tr>
+        <tr><td class="border px-4">6</td><td class="border px-2">函数图像</td><td class="border px-2">绘制分数函数图像、绘制三角函数与指数函数结合。</td></tr>
+        <tr><td class="border px-4">7</td><td class="border px-2">函数与图像分析</td><td class="border px-2">不等式方程、函数定义域/值域、复合函数、摸函数与反函数、指数/对数函数图像变换、三次函数步。</td></tr>
+        <tr><td class="border px-4">8</td><td class="border px-2">微分基础1</td><td class="border px-2">导数定义与几何意义、幂函数导数、链式法则、单调性、二阶微分、极值判定。</td></tr>
+        <tr><td class="border px-4">9</td><td class="border px-2">微分基础2、积分</td><td class="border px-2">指数/对数函数微分、乘/除法法则、不定积分公式、定积分几何意义、梯形法则近似积分。</td></tr>
+        <tr><td class="border px-4">10</td><td class="border px-2">排列组合</td><td class="border px-2">排列组合趣题、二项式展开。</td></tr>
+        <tr><td class="border px-4">11</td><td class="border px-2">数列与级数</td><td class="border px-2">等差/等比数列求和、收敛性判定、二项式展开（含分数指数）、泰勒级数初步（以 e^x 为例）。</td></tr>
+        <tr><td class="border px-4">12</td><td class="border px-2">数论与证明技巧1</td><td class="border px-2">质数性质、同余定理、反证法应用。</td></tr>
+        <tr><td class="border px-4">13</td><td class="border px-2">数论与证明技巧2</td><td class="border px-2">数学归纳法、鸽巢原理。</td></tr>
+        <tr><td class="border px-4">14</td><td class="border px-2">平面向量</td><td class="border px-2">平面向量的加减法、点乘与叉乘。</td></tr>
+        <tr><td class="border px-4">15</td><td class="border px-2">矩阵与线性代数</td><td class="border px-2">矩阵加减乘、行列式与逆矩阵（2x2）、线性方程组求解（高斯消元）、矩阵变换几何意义。</td></tr>
+        <tr><td class="border px-4">16</td><td class="border px-2">概率与统计</td><td class="border px-2">概率公理、条件概率与独立性、离散随机变量期望/方差、二项分布。</td></tr>
+      </tbody>
+    </table>
+  </section>
+</div>`
   },
   {
     id: 'prep',
     title: '牛剑先修营',
-    content: `2025年牛剑先修营
-集训营概述
-本集训营旨在帮助有志于申请牛津、剑桥及帝国理工的学生高效学习和提升学术能力。通过精细化的课程安排和高频测试，确保学生能够最大程度地提升自己的学术水平，并为未来的申请打下坚实的基础。所有课程均为全英文授课。师资为全牛剑本硕（物理工程组,生物组为牛剑本硕博）选拔老师均以高标准要求：三年及以上教龄，有牛剑成功学生经验，有独立编写整合知识教案能力，全英文大班授课能力，授课具有一定的幽默感，逻辑清晰，具有较强的教学兴趣和责任感。
-牛剑先修营简介
-牛剑先修营专为高一升高二、有志于申请牛津、剑桥、帝国理工或未来希望学习相关专业的学生设计。该课程的设计初衷是帮助学生提前掌握关键知识点，为后期适应性训练打下基础，并有效帮助备考BPHO、AMC、NEC、UKCHO等国际竞赛。
-适应人群
-高一升高二的学生
-有志于申请牛津、剑桥、帝国理工，或者大学希望学习相关专业的学
-课程安排
-开课时间：2025.7.9-2025.7.23
-上午：系统性授课 （覆盖牛剑笔面试必修重难点）
-下午：练习与测试。
-结营测试：评估学生学习成果
-教学内容
-精讲课本必修课程内容，还原知识的本质。
-初步介绍竞赛课程。
-目标
-帮助学生提前掌握核心知识，为未来冲刺牛剑做好准备。
-通过科学规划，在未来数月内系统完成学习目标。
-有效帮助备考BPHO、AMC、NEC、UKCHO等国际竞赛。
-课表安排
-理工材料
-标注说明：
-**表示该内容不包含在 A-Level/IB/AP 课程大纲中，但可能在 Oxbridge（牛剑）能力测试或面试中有所提及或暗示。
-*表示该内容将在 13 年级涉及。我们认为 A-Level/IB/AP 物理教材的知识顺序存在问题，因此对教学顺序进行了调整。
-注意事项：
-学生需在夏令营前掌握一些基础数学知识，推荐内容如下：
-微积分：多项式与三角函数的微分与积分
-向量：向量加法、减法、点积/叉积
-几何：圆、角度的度量单位（度与弧度），坐标系中的角度表示
-三角学：正弦定理、余弦定理，利用三角恒等式计算三角形面积
-这些内容将在第 2 天和第 3 天讲解，但建议学生提前预习。
-本课程以力学为重点，因为 Oxbridge 相关测试中 70% 的题目涉及基础力学。
-推荐阅读——经典教材，从基础视角介绍所需的数学与物理知识！
-《Ohanian Physics》（Hans C. Ohanian），第 2 卷，W.W. Norton & Company
-化学组
-标注说明：
-高亮的主题同时出现在 AS 和 A2 (IB 1/2年级) 课程中。
-“*”表示该内容不包括在 IGCSE 课程中，或其难度大幅提升。
-注意事项：
-去除 2、15、17 族元素的学习内容：
-这些内容主要基于记忆，而非概念理解，因此在本计划中不作重点讲解。
-取而代之，我们会学习元素周期性（Periodicity），以建立整体的周期表认识。
-不包含过渡金属（Transition Metal）：
-该部分与 IGCSE 和 AS 课程完全没有重叠，因此不在计划内。
-若时间允许，会介绍该部分的基础知识。
-可能增加 A2 的动力学（Kinetics）：
-如果时间允许，将会进一步深入学习 A2 级别的反应动力学，以帮助学生更好地理解速率方程与机理。
-推荐阅读：
-Keeler, J. and Wothers, P. (2009). 《Why chemical reactions happen》. Oxford: Oxford University Press.
-生物组
-备注：
-课程大纲主要基于 ESAT 课程，但从基础知识开始，仅需 GCSE 生物背景。
-尽管部分内容看似直观，本课程的难度仍对 11 年级学生具有挑战性。
-数学组：
-标注说明：
-** 标记 AL/IB/AP 课程大纲中没有的内容。但是，它们在牛剑笔试或面 试中提到或会需要。
-* 标记 13 年级将接触的内容。
-注意：
-本课程大纲确保学生不会遗漏任何基础知识，以便他们能够专注于后续的高级知识学习。如果他们愿意，可以继续阅读大学水平的书籍，并且我们鼓励学生提前学习以巩固他们目前的知识水平。
-经济组：
-课程目标：
-⼴泛了解经济学课内外主题，找到⾃⼰的兴趣，为未来的申请策略做准备。
-培养经济兴趣，夯实申请意愿。
-在夏校的⼗五天中，会提供⼗个课题的⼗组课外阅读材料，和⼗五篇挑选过的经济学⼈⽂章资源。⼗个课题的阅读材料会循序渐进的帮助两组同学进⾏额外的知识点拓展，其内容如下：
-1.   Markets and efficiency
-2.   Public goods
-3.   Externalities
-4.   Market Power and Competition
-5.   Information Asymmetry
-6.   Equity and Redistribution
-7.   Cost Benefit Analysis
-8.   Taxation
-9.   Trade policy
-10.  Well-being and Behavioral Economics
-北京修斯教育科技`,
+    content: `<div class="course-detail">
+  <h1 class="text-2xl font-bold mb-4">2025年牛剑先修营</h1>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">集训营概述</h2>
+    <p>本集训营旨在帮助有志于申请牛津、剑桥及帝国理工的学生高效学习和提升学术能力。通过精细化的课程安排和高频测试，确保学生能够最大程度地提升自己的学术水平，并为未来的申请打下坚实的基础。所有课程均为全英文授课。师资为全牛剑本硕（物理工程组,生物组为牛剑本硕博）选拔老师均以高标准要求：三年及以上教龄，有牛剑成功学生经验，有独立编写整合知识教案能力，全英文大班授课能力，授课具有一定的幽默感，逻辑清晰，具有较强的教学兴趣和责任感。</p>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">牛剑先修营简介</h2>
+    <p>牛剑先修营专为高一升高二、有志于申请牛津、剑桥、帝国理工或未来希望学习相关专业的学生设计。该课程的设计初衷是帮助学生提前掌握关键知识点，为后期适应性训练打下基础，并有效帮助备考BPHO、AMC、NEC、UKCHO等国际竞赛。</p>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">适应人群</h2>
+    <ul class="list-disc px-8">
+      <li>高一升高二的学生</li>
+      <li>有志于申请牛津、剑桥、帝国理工，或者大学希望学习相关专业的学生</li>
+    </ul>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">课程安排</h2>
+    <ul class="list-disc px-8">
+      <li>开课时间：2025.7.9-2025.7.23</li>
+      <li>上午：系统性授课（覆盖牛剑笔面试必修重难点）</li>
+      <li>下午：练习与测试</li>
+      <li>结营测试：评估学生学习成果</li>
+    </ul>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">教学内容与目标</h2>
+    <ul class="list-disc px-8">
+      <li>精讲课本必修课程内容，还原知识的本质</li>
+      <li>初步介绍竞赛课程</li>
+      <li>帮助学生提前掌握核心知识，为未来冲刺牛剑做好准备</li>
+      <li>通过科学规划，在未来数月内系统完成学习目标</li>
+      <li>有效帮助备考BPHO、AMC、NEC、UKCHO等国际竞赛</li>
+    </ul>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">课程内容详情</h2>
+
+    <div class="mb-4">
+      <h3 class="text-l font-semibold mb-2">理工材料</h3>
+      <p class="mb-2"><strong>标注说明：</strong></p>
+      <ul class="list-disc px-8">
+        <li>**表示该内容不包含在 A-Level/IB/AP 课程大纲中，但可能在 Oxbridge（牛剑）能力测试或面试中有所提及或暗示</li>
+        <li>*表示该内容将在 13 年级涉及</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="text-l font-semibold mb-2">注意事项</h3>
+      <p class="mb-2">学生需在夏令营前掌握的基础数学知识：</p>
+      <ul class="list-disc px-8">
+        <li>微积分：多项式与三角函数的微分与积分</li>
+        <li>向量：向量加法、减法、点积/叉积</li>
+        <li>几何：圆、角度的度量单位（度与弧度），坐标系中的角度表示</li>
+        <li>三角学：正弦定理、余弦定理，利用三角恒等式计算三角形面积</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="text-l font-semibold mb-2">推荐阅读</h3>
+      <p>《Ohanian Physics》（Hans C. Ohanian），第 2 卷，W.W. Norton & Company</p>
+    </div>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-xl font-semibold mb-3">专业分组课程</h2>
+
+    <div class="mb-4">
+      <h3 class="text-l font-semibold mb-2">化学组</h3>
+      <p class="mb-2"><strong>课程重点：</strong></p>
+      <ul class="list-disc px-8">
+        <li>重点学习元素周期性（Periodicity），建立整体的周期表认识</li>
+        <li>基础反应动力学学习</li>
+        <li>推荐阅读：Keeler, J. and Wothers, P. (2009).《Why chemical reactions happen》</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h3 class="text-l font-semibold mb-2">经济组</h3>
+      <p class="mb-2"><strong>课程目标：</strong></p>
+      <ul class="list-disc px-8">
+        <li>⼴泛了解经济学课内外主题，找到⾃⼰的兴趣</li>
+        <li>为未来的申请策略做准备</li>
+        <li>培养经济兴趣，夯实申请意愿</li>
+      </ul>
+      <p class="mb-2"><strong>十大核心课题：</strong></p>
+      <ul class="list-disc px-8">
+        <li>Markets and efficiency</li>
+        <li>Public goods</li>
+        <li>Externalities</li>
+        <li>Market Power and Competition</li>
+        <li>Information Asymmetry</li>
+        <li>Equity and Redistribution</li>
+        <li>Cost Benefit Analysis</li>
+        <li>Taxation</li>
+        <li>Trade policy</li>
+        <li>Well-being and Behavioral Economics</li>
+      </ul>
+    </div>
+  </section>
+</div>
+`,
   },
   {
     id: 'sprint',
