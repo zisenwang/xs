@@ -2,7 +2,14 @@
   "app": {
     "title": "修斯国际教育",
     "switch": "切换为：",
-    "company full name": "北京修斯教育科技"
+    "company full name": "北京修斯教育科技",
+    "subjects": {
+      "engineeringPhysics": "物理工程",
+      "maths": "数学",
+      "economy": "经济",
+      "chemistry": "化学",
+      "biology": "生物"
+    }
   },
   "header": {
     "aboutUs": "公司介绍",

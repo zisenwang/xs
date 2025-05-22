@@ -2,7 +2,14 @@
   "app": {
     "title": "Hills Education & Technology",
     "switch": "Switch to: ",
-    "company full name": "Beijing Hills Education & Technology"
+    "company full name": "Beijing Hills Education & Technology",
+    "subjects": {
+      "engineeringPhysics": "Engineering Physics",
+      "maths": "Mathematics",
+      "economy": "Economy",
+      "chemistry": "Chemistry",
+      "biology": "Biology"
+    }
   },
   "header": {
     "aboutUs": "About Us",

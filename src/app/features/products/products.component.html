@@ -1,6 +1,4 @@
-<xs-shared-bg-title [title]="title | translate" [bgUrl]="bgUrl">
-  fa
-</xs-shared-bg-title>
+<xs-shared-bg-title [title]="title | translate" [bgUrl]="bgUrl"></xs-shared-bg-title>
 <div
   class="flex min-h-[80vh] max-w-6xl mt-24 mx-auto font-sans p-5 box-border animate-enter fade-in-10 animate-duration-2000">
   <!-- Sidebar -->
@@ -9,10 +7,13 @@
   </div>
 
   <!-- Main Content -->
-  <div class="flex-1 bg-gray-50 p-5 rounded-lg overflow-y-auto max-h-[80vh]">
-    <h2 class="text-xl font-semibold">{{ selectedProduct.title }}</h2>
-    <div
-      class="whitespace-pre-line leading-[1.8]"
-      [innerHTML]="selectedProduct.content"></div>
+  <div class="flex-1">
+    <p-panel [toggleable]="false">
+      <ng-template #header>
+        <h2 class="text-xl font-semibold m-0">{{ selectedProduct.title }}</h2>
+      </ng-template>
+      <div class="leading-[1.8]" [innerHTML]="selectedProduct.content"></div>
+    </p-panel>
   </div>
+
 </div>
