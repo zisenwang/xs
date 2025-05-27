@@ -31,7 +31,7 @@ export const TEACHERS: IProfile[] = [
     ],
   },
   {
-    name: 'Dr. Laura Yuan，剑桥大学自然科学一等学位，现为伦敦玛丽女王大学博士研究员',
+    name: 'Dr. Arina Huang，剑桥大学自然科学一等学位，现为伦敦玛丽女王大学博士研究员',
     badge: '/images/logo_cam.png',
     details: [
       '北京修斯生物组负责人',

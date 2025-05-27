@@ -32,10 +32,11 @@ export const routes: Routes = [
   },
   {
     path: 'products',
-    loadComponent: () =>
-      import('./features/products/products.component').then(
-        m => m.ProductsComponent
-      ),
+    // loadComponent: () =>
+    //   import('./features/products/products.component').then(
+    //     m => m.ProductsComponent
+    //   ),
+    loadChildren: () => import('./features/products/products.routes').then(m => m.productsRoutes)
   },
   {
     path: 'success-stories',
