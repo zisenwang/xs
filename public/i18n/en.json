@@ -9,14 +9,16 @@
       "economy": "Economy",
       "chemistry": "Chemistry",
       "biology": "Biology"
-    }
+    },
+    "nav": "Navigation"
   },
   "header": {
     "aboutUs": "About Us",
     "teachers": "Our Teachers",
     "products": "Our Programs",
     "successStories": "Success Stories",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "home": "Home"
   },
   "banner": {
     "educationFirst": "Research-led Education",

@@ -9,14 +9,16 @@
       "economy": "经济",
       "chemistry": "化学",
       "biology": "生物"
-    }
+    },
+    "nav": "导航"
   },
   "header": {
     "aboutUs": "公司介绍",
     "teachers": "教师介绍",
     "products": "产品介绍",
     "successStories": "成功案例",
-    "contactUs": "联系我们"
+    "contactUs": "联系我们",
+    "home": "主页"
   },
   "banner": {
     "educationFirst": "教研为本",

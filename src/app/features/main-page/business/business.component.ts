@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { Card } from 'primeng/card';
 import { ImageScrollComponent } from '@shared/components/image-scroll/image-scroll.component';
 import { ICard } from '@shared/models';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'xs-main-page-business',
-  imports: [Card, ImageScrollComponent, TranslatePipe],
+  imports: [ImageScrollComponent, TranslatePipe],
   templateUrl: './business.component.html',
   styleUrl: './business.component.scss',
   standalone: true,

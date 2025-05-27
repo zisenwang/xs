@@ -2,7 +2,7 @@
 <div
   class="flex min-h-[80vh] max-w-6xl mt-24 mx-auto font-sans p-5 box-border animate-enter fade-in-10 animate-duration-2000">
   <!-- Sidebar -->
-  <div class="w-60 mr-5">
+  <div class="w-60 sticky top-28 h-fit mr-5 z-10">
     <p-panelMenu [model]="model"></p-panelMenu>
   </div>
 
@@ -12,8 +12,7 @@
       <ng-template #header>
         <h2 class="text-xl font-semibold m-0">{{ selectedProduct.title }}</h2>
       </ng-template>
-      <div class="leading-[1.8]" [innerHTML]="selectedProduct.content"></div>
+      <router-outlet></router-outlet>
     </p-panel>
   </div>
-
 </div>
