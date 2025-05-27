@@ -10,7 +10,9 @@
       <p-card
         class="transform transition-all duration-300 block lg:flex min-w-full min-h-full hover:shadow-xl hover:bg-gray-100 hover:-translate-y-2"
         pAnimateOnScroll
-        enterClass="animate-enter fade-in-10 slide-in-from-b-20 animate-duration-2000">
+        enterClass="animate-enter fade-in-10 slide-in-from-b-20 animate-duration-2000"
+        (click)="goToProduct(service.url)"
+      >
         <ng-template #header>
           <img
             alt="Card"
