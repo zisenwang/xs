@@ -11,30 +11,21 @@ import {
   LANG_ZH_CN,
   LANG_EN,
 } from '@shared/constants';
+import {TranslateButtonComponent} from '@shared/components/translate-button/translate-button.component';
 
 @Component({
   selector: 'xs-header',
-  imports: [ButtonModule, Menubar, CommonModule, TranslateModule, RouterLink],
+  imports: [ButtonModule, Menubar, CommonModule, TranslateModule, RouterLink, TranslateButtonComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   standalone: true,
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   protected readonly HEADER_SECTOR = HEADER_SECTOR;
-  protected readonly LANG_ZH_CN = LANG_ZH_CN;
-  protected readonly LANG_EN = LANG_EN;
   protected readonly MAIN_PAGE = MAIN_PAGE;
 
   private scrollService = inject(ScrollService);
-  private translate = inject(TranslateService);
   private router = inject(Router);
-
-  currentLang = this.translate.currentLang;
-
-  ngOnInit() {
-    this.currentLang =
-      this.translate.currentLang || this.translate.getDefaultLang() || 'zh-CN';
-  }
 
   items = [
     {
@@ -63,9 +54,4 @@ export class HeaderComponent implements OnInit {
       command: () => this.router.navigate(['/contact-us']),
     },
   ];
-
-  selectLang(lang: string) {
-    this.translate.use(lang);
-    this.currentLang = lang;
-  }
 }
