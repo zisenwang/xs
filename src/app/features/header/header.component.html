@@ -14,26 +14,7 @@
       </div>
     </ng-template>
     <ng-template #end>
-      <div class="flex">
-        <p class="px-4">{{ 'app.switch' | translate }}</p>
-        <a
-          (click)="selectLang(LANG_ZH_CN)"
-          class="cursor-pointer"
-          [style.text-decoration]="
-            currentLang === LANG_ZH_CN ? 'underline' : 'none'
-          "
-          >简体中文</a
-        >
-        <p class="px-4">|</p>
-        <a
-          (click)="selectLang('en')"
-          class="cursor-pointer"
-          [style.text-decoration]="
-            currentLang === LANG_EN ? 'underline' : 'none'
-          "
-          >English</a
-        >
-      </div>
+      <xs-shared-translate-button></xs-shared-translate-button>
     </ng-template>
   </p-menubar>
 </section>
