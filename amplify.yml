@@ -17,5 +17,3 @@ frontend:
   cache:
     paths:
       - .npm/**/*
-  customHeaders:
-    file: customHeaders.json

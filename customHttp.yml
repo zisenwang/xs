@@ -1,17 +1,19 @@
 customHeaders:
   - pattern: "**/*.{png,jpg,jpeg,webp,svg}"
     headers:
-      - key: Cache-Control
-        value: public,max-age=31536000,immutable
+      - key: 'Cache-Control'
+        value: 'public, max-age=31536000, s-maxage=31536000, immutable'
+
   - pattern: "**/*.{mp4,webm,ogg}"
     headers:
-      - key: Content-Type
-        value: video/mp4
-      - key: Accept-Ranges
-        value: bytes
-      - key: Cache-Control
-        value: public,max-age=31536000,immutable
+      - key: 'Content-Type'
+        value: 'video/mp4'
+      - key: 'Accept-Ranges'
+        value: 'bytes'
+      - key: 'Cache-Control'
+        value: 'public, max-age=31536000, s-maxage=31536000, immutable'
+
   - pattern: "**/*"
     headers:
-      - key: Cache-Control
-        value: max-age=0,no-cache,no-store,must-revalidate
+      - key: 'Cache-Control'
+        value: 'max-age=0, no-cache, no-store, must-revalidate'
