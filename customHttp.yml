@@ -11,6 +11,8 @@ customHeaders:
         value: bytes
       - key: Cache-Control
         value: public, max-age=31536000, s-maxage=31536000, immutable
+      - key: Test
+        value: 'guess it is working'
 #  - pattern: "**/*"
 #    headers:
 #      - key: 'Cache-Control'
