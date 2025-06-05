@@ -4,7 +4,7 @@ customHeaders:
       - key: 'Cache-Control'
         value: 'public, max-age=31536000, s-maxage=31536000, immutable'
 
-  - pattern: "**/*.{mp4,webm,ogg}"
+  - pattern: "/public/video/*.{mp4,webm,ogg}"
     headers:
       - key: 'Content-Type'
         value: 'video/mp4'
