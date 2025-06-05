@@ -1,10 +1,10 @@
 customHeaders:
-  - pattern: "/public/images/*.{png,jpg,jpeg,webp,svg}"
+  - pattern: '/images/*'
     headers:
       - key: 'Cache-Control'
         value: 'public, max-age=31536000, s-maxage=31536000, immutable'
 
-  - pattern: "/public/video/*.{mp4,webm,ogg}"
+  - pattern: '/video/*'
     headers:
       - key: 'Content-Type'
         value: 'video/mp4'
