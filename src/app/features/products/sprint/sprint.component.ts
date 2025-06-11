@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'xs-products-sprint',
@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
   styleUrl: './sprint.component.scss',
   standalone: true,
 })
-export class SprintComponent {
-}
+export class SprintComponent {}

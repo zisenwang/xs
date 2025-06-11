@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'xs-products-prep',
@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
   styleUrl: './prep.component.scss',
   standalone: true,
 })
-export class PrepComponent {
-}
+export class PrepComponent {}

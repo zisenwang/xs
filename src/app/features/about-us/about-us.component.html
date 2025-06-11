@@ -4,7 +4,8 @@
   [bgUrl]="bgUrl">
 </xs-shared-bg-title>
 
-<main class="max-w-6xl mx-auto px-4 py-16 animate-enter fade-in-10 animate-duration-2000">
+<main
+  class="max-w-6xl mx-auto px-4 py-16 animate-enter fade-in-10 animate-duration-2000">
   <section class="mb-12">
     <h2 class="text-4xl font-bold text-center mb-8">
       <span class="p-text-title">关于我们</span>
@@ -25,18 +26,19 @@
       <span class="p-text-title">课程特色</span>
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      @for (feature of features; track feature.title){
+      @for (feature of features; track feature.title) {
         <p-card
           styleClass="text-center transform transition-all duration-300 hover:-translate-y-2">
           <ng-template #header>
-            <img [src]="feature.image"
-                 [alt]="feature.title"
-                 class="mx-auto w-24 h-24 mb-4">
+            <img
+              [src]="feature.image"
+              [alt]="feature.title"
+              class="mx-auto w-24 h-24 mb-4" />
           </ng-template>
           <h3 class="text-xl font-semibold mb-3">
-            <span class="p-text-secondary">{{feature.title}}</span>
+            <span class="p-text-secondary">{{ feature.title }}</span>
           </h3>
-          <p class="p-text-normal">{{feature.description}}</p>
+          <p class="p-text-normal">{{ feature.description }}</p>
         </p-card>
       }
     </div>

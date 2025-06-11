@@ -3,19 +3,15 @@
   <a
     (click)="selectLang(LANG_ZH_CN)"
     class="cursor-pointer"
-    [style.text-decoration]="
-            currentLang === LANG_ZH_CN ? 'underline' : 'none'
-          "
-  >简体中文</a
+    [style.text-decoration]="currentLang === LANG_ZH_CN ? 'underline' : 'none'"
+    >简体中文</a
   >
   <p class="px-4">|</p>
   <a
     (click)="selectLang('en')"
     class="cursor-pointer"
-    [style.text-decoration]="
-            currentLang === LANG_EN ? 'underline' : 'none'
-          "
-  >English</a
+    [style.text-decoration]="currentLang === LANG_EN ? 'underline' : 'none'"
+    >English</a
   >
 </div>
 
@@ -25,11 +21,9 @@
     <ng-template #handle>
       @if (currentLang === LANG_EN) {
         <img src="/icons/en.svg" class="h-[20px]" alt="English" />
-      }
-      @else {
+      } @else {
         <img src="/icons/zh.svg" class="h-[20px]" alt="Chinese" />
       }
     </ng-template>
   </p-toggleswitch>
 </div>
-

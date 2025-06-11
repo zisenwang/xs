@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'xs-products-advanced-en',
@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
   styleUrl: './advanced-en.component.scss',
   standalone: true,
 })
-export class AdvancedEnComponent {
-}
+export class AdvancedEnComponent {}

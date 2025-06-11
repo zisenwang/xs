@@ -15,7 +15,6 @@ export const PRODUCTS_DETAIL: ProductItem[] = [
   {
     id: 'sprint',
     title: '牛剑冲刺营',
-
   },
   {
     id: 'interview',

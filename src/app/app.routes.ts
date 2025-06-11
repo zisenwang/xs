@@ -36,7 +36,8 @@ export const routes: Routes = [
     //   import('./features/products/products.component').then(
     //     m => m.ProductsComponent
     //   ),
-    loadChildren: () => import('./features/products/products.routes').then(m => m.productsRoutes)
+    loadChildren: () =>
+      import('./features/products/products.routes').then(m => m.productsRoutes),
   },
   {
     path: 'success-stories',

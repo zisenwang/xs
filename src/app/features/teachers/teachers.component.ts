@@ -10,7 +10,7 @@ import {
   IProfile,
   ProfileCardListComponent,
 } from '@shared/components/profile-card-list/profile-card-list.component';
-import {TEACHERS} from '@app/features/teachers/teachers.constants';
+import { TEACHERS } from '@app/features/teachers/teachers.constants';
 
 @Component({
   selector: 'xs-teachers',
@@ -23,5 +23,5 @@ export class TeachersComponent {
   protected readonly title = TEACHERS_TITLE;
   protected readonly subtitle = TEACHERS_SUBTITLE;
   protected readonly bgUrl = BG_TEACHERS_URL;
-  protected readonly teachers: IProfile[] = TEACHERS
+  protected readonly teachers: IProfile[] = TEACHERS;
 }

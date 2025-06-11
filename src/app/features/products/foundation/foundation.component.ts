@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'xs-products-foundation',
@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
   styleUrl: './foundation.component.scss',
   standalone: true,
 })
-export class FoundationComponent {
-}
+export class FoundationComponent {}

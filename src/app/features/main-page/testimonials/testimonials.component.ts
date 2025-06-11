@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
 import { Card } from 'primeng/card';
@@ -12,7 +12,7 @@ import {
   TESTIMONIALS_SLOGAN,
   TESTIMONIALS_SUCCESS_STORIES,
 } from '@shared/constants';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 interface SuccessCase {
   studentName: string;
@@ -40,7 +40,7 @@ interface SuccessCase {
   standalone: true,
 })
 export class TestimonialsComponent {
-  private router = inject(Router)
+  private router = inject(Router);
 
   successCases: SuccessCase[] = [
     {
@@ -92,6 +92,6 @@ export class TestimonialsComponent {
   protected readonly TESTIMONIALS_SLOGAN = TESTIMONIALS_SLOGAN;
 
   goToCase() {
-    this.router.navigate(['/success-stories'])
+    this.router.navigate(['/success-stories']);
   }
 }

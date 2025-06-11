@@ -6,8 +6,8 @@ import {
 } from '@shared/constants';
 import { BgTitleComponent } from '@shared/components/bg-title/bg-title.component';
 import { TranslatePipe } from '@ngx-translate/core';
-import {Card} from 'primeng/card';
-import {FEATURES} from '@app/features/about-us/about-us.constants';
+import { Card } from 'primeng/card';
+import { FEATURES } from '@app/features/about-us/about-us.constants';
 
 @Component({
   selector: 'xs-about-us',

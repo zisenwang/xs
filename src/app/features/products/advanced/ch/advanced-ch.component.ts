@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'xs-products-advanced-ch',
@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
   styleUrl: './advanced-ch.component.scss',
   standalone: true,
 })
-export class AdvancedChComponent {
-}
+export class AdvancedChComponent {}

@@ -1,8 +1,8 @@
-import {Component, inject, Input, OnInit} from '@angular/core';
-import {TranslatePipe, TranslateService} from '@ngx-translate/core';
-import {LANG_EN, LANG_ZH_CN} from '@shared/constants';
-import {ToggleSwitch} from 'primeng/toggleswitch';
-import {FormsModule} from '@angular/forms';
+import { Component, inject, OnInit } from '@angular/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { LANG_EN, LANG_ZH_CN } from '@shared/constants';
+import { ToggleSwitch } from 'primeng/toggleswitch';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'xs-shared-translate-button',
@@ -11,7 +11,7 @@ import {FormsModule} from '@angular/forms';
   styleUrl: './translate-button.component.scss',
   standalone: true,
 })
-export class TranslateButtonComponent implements OnInit{
+export class TranslateButtonComponent implements OnInit {
   private translate = inject(TranslateService);
   protected readonly LANG_EN = LANG_EN;
   protected readonly LANG_ZH_CN = LANG_ZH_CN;
@@ -21,7 +21,9 @@ export class TranslateButtonComponent implements OnInit{
 
   ngOnInit() {
     this.currentLang =
-      this.translate.currentLang || this.translate.getDefaultLang() || LANG_ZH_CN;
+      this.translate.currentLang ||
+      this.translate.getDefaultLang() ||
+      LANG_ZH_CN;
     this.isCurrentLangEn = this.currentLang === LANG_EN;
   }
 
@@ -30,7 +32,7 @@ export class TranslateButtonComponent implements OnInit{
     this.currentLang = lang;
   }
 
-  changeLang(){
+  changeLang() {
     this.translate.use(this.currentLang === LANG_ZH_CN ? LANG_EN : LANG_ZH_CN);
     this.currentLang = this.currentLang === LANG_ZH_CN ? LANG_EN : LANG_ZH_CN;
   }

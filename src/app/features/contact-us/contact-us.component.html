@@ -3,13 +3,29 @@
 </xs-shared-bg-title>
 <div class="max-w-6xl mx-auto font-sans p-10 sm:flex sm:gap-10">
   <div class="flex-1/2 justify-center items-center pt-4">
-    <p-toast class="w-full"/>
+    <p-toast class="w-full" />
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6">
       <div class="flex flex-col gap-2">
-        <label for="name" class="block"><span class="text-red-500">*</span>Name</label>
-        <input type="text" pInputText id="name" placeholder="Required" [ngClass]="{'ng-invalid ng-dirty': (contactForm.get('name')?.invalid && contactForm.get('name')?.touched)}" formControlName="name"/>
-        @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched){
-          <p-message severity="error" variant="simple" size="small">Name is required</p-message>
+        <label for="name" class="block"
+          ><span class="text-red-500">*</span>Name</label
+        >
+        <input
+          type="text"
+          pInputText
+          id="name"
+          placeholder="Required"
+          [ngClass]="{
+            'ng-invalid ng-dirty':
+              contactForm.get('name')?.invalid &&
+              contactForm.get('name')?.touched,
+          }"
+          formControlName="name" />
+        @if (
+          contactForm.get('name')?.invalid && contactForm.get('name')?.touched
+        ) {
+          <p-message severity="error" variant="simple" size="small"
+            >Name is required</p-message
+          >
         }
       </div>
 
@@ -17,48 +33,108 @@
         <label class="block">What do you want tuition for?</label>
         @for (subject of tuitionOptions; track subject) {
           <div class="flex items-center">
-            <p-checkbox [inputId]="subject.name" [value]="subject.value" formControlName="subjects"></p-checkbox>
-            <label [for]="subject.name" class="ml-2">{{ subject.name | translate }}</label>
+            <p-checkbox
+              [inputId]="subject.name"
+              [value]="subject.value"
+              formControlName="subjects"></p-checkbox>
+            <label [for]="subject.name" class="ml-2">{{
+              subject.name | translate
+            }}</label>
           </div>
         }
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="phone" class="block"><span class="text-red-500">*</span>Phone</label>
-        <input type="number" pInputText id="phone" placeholder="Required" [ngClass]="{'ng-invalid ng-dirty': (contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched)}" formControlName="phone"/>
-        @if (contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched){
-          <p-message severity="error" variant="simple" size="small">Phone is required</p-message>
+        <label for="phone" class="block"
+          ><span class="text-red-500">*</span>Phone</label
+        >
+        <input
+          type="number"
+          pInputText
+          id="phone"
+          placeholder="Required"
+          [ngClass]="{
+            'ng-invalid ng-dirty':
+              contactForm.get('phone')?.invalid &&
+              contactForm.get('phone')?.touched,
+          }"
+          formControlName="phone" />
+        @if (
+          contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched
+        ) {
+          <p-message severity="error" variant="simple" size="small"
+            >Phone is required</p-message
+          >
         }
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="wechat" class="block"><span class="text-red-500">*</span>WeChat</label>
-        <input type="text" pInputText id="wechat" placeholder="Required" [ngClass]="{'ng-invalid ng-dirty': (contactForm.get('wechat')?.invalid && contactForm.get('wechat')?.touched)}" formControlName="wechat"/>
-        @if (contactForm.get('wechat')?.invalid && contactForm.get('wechat')?.touched){
-          <p-message severity="error" variant="simple" size="small">WeChat is required</p-message>
+        <label for="wechat" class="block"
+          ><span class="text-red-500">*</span>WeChat</label
+        >
+        <input
+          type="text"
+          pInputText
+          id="wechat"
+          placeholder="Required"
+          [ngClass]="{
+            'ng-invalid ng-dirty':
+              contactForm.get('wechat')?.invalid &&
+              contactForm.get('wechat')?.touched,
+          }"
+          formControlName="wechat" />
+        @if (
+          contactForm.get('wechat')?.invalid &&
+          contactForm.get('wechat')?.touched
+        ) {
+          <p-message severity="error" variant="simple" size="small"
+            >WeChat is required</p-message
+          >
         }
       </div>
 
       <div class="flex flex-col gap-2">
         <label for="email" class="block">Email</label>
-        <input type="text" pInputText id="email" [ngClass]="{'ng-invalid ng-dirty': (contactForm.get('email')?.invalid && contactForm.get('email')?.touched)}" formControlName="email"/>
-        @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched){
-          <p-message severity="error" variant="simple" size="small">Email is invalid</p-message>
+        <input
+          type="text"
+          pInputText
+          id="email"
+          [ngClass]="{
+            'ng-invalid ng-dirty':
+              contactForm.get('email')?.invalid &&
+              contactForm.get('email')?.touched,
+          }"
+          formControlName="email" />
+        @if (
+          contactForm.get('email')?.invalid && contactForm.get('email')?.touched
+        ) {
+          <p-message severity="error" variant="simple" size="small"
+            >Email is invalid</p-message
+          >
         }
       </div>
 
       <div class="flex flex-col gap-2">
         <label for="message" class="block">Message</label>
-        <textarea pTextarea id="message" rows="4" formControlName="message" class="resize-none"></textarea>
+        <textarea
+          pTextarea
+          id="message"
+          rows="4"
+          formControlName="message"
+          class="resize-none"></textarea>
       </div>
 
-      <p-button type="submit" label="Submit"/>
+      <p-button type="submit" label="Submit" />
     </form>
   </div>
   <div class="flex-1 items-center justify-center sticky top-28 pt-4 h-fit">
-    <div class="bg-gray-100 text-blue-900 rounded-2xl shadow-md p-6 w-full max-w-md text-center space-y-4">
+    <div
+      class="bg-gray-100 text-blue-900 rounded-2xl shadow-md p-6 w-full max-w-md text-center space-y-4">
       <div class="text-lg font-semibold">联系客服微信</div>
-      <img alt="wechat" src="/images/hills_wechat_qr.png" class="w-full rounded-lg"/>
+      <img
+        alt="wechat"
+        src="/images/hills_wechat_qr.png"
+        class="w-full rounded-lg" />
       <div class="text-sm">邮箱：contact&#64;hillsedtech.com</div>
     </div>
   </div>

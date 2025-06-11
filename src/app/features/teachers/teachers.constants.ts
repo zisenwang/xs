@@ -1,4 +1,4 @@
-import {IProfile} from '@shared/components/profile-card-list/profile-card-list.component';
+import { IProfile } from '@shared/components/profile-card-list/profile-card-list.component';
 export const TEACHERS: IProfile[] = [
   {
     name: 'Dr. Kevin Chen，牛津大学工程科学硕士，固体力学及应用数学博士',
@@ -36,7 +36,7 @@ export const TEACHERS: IProfile[] = [
     details: [
       '北京修斯生物组负责人',
       '擅长PS指导、面试培训以及生物、化学和数学的学术提升。',
-      '有超过5年的牛剑申请辅导经验，辅导多名学生成功申请到牛剑相关专业。'
+      '有超过5年的牛剑申请辅导经验，辅导多名学生成功申请到牛剑相关专业。',
     ],
   },
   {

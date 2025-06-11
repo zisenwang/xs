@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'xs-products-interview-en',
@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
   styleUrl: './interview-en.component.scss',
   standalone: true,
 })
-export class InterviewEnComponent {
-}
+export class InterviewEnComponent {}
