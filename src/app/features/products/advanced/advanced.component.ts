@@ -1,4 +1,4 @@
-import {Component, DestroyRef, inject, OnInit} from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { LANG_EN, LANG_ZH_CN } from '@shared/constants';
@@ -14,14 +14,13 @@ import { AdvancedChComponent } from '@app/features/products/advanced/ch/advanced
 })
 export class AdvancedComponent implements OnInit {
   private translate = inject(TranslateService);
-  private readonly destroyRef = inject(DestroyRef);
   currentLang =
     this.translate.currentLang || this.translate.getDefaultLang() || LANG_ZH_CN;
   protected readonly LANG_EN = LANG_EN;
   protected readonly LANG_ZH_CN = LANG_ZH_CN;
 
   ngOnInit() {
-    this.translate.onLangChange.pipe(takeUntilDestroyed(this.destroyRef)).subscribe(event => {
+    this.translate.onLangChange.pipe(takeUntilDestroyed()).subscribe(event => {
       this.currentLang = event.lang;
     });
   }
