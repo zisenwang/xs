@@ -4,8 +4,6 @@ import {
   ElementRef,
   HostListener,
   inject,
-  QueryList,
-  ViewChildren,
 } from '@angular/core';
 import { BannerComponent } from '@app/features/main-page/banner/banner.component';
 import { BusinessComponent } from '@app/features/main-page/business/business.component';
