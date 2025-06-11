@@ -27,7 +27,8 @@ import {TUITION_OPTIONS} from '@app/features/contact-us/contact-us.data';
     Button, Toast, InputText, Textarea, Message, NgClass, Checkbox],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss',
-  providers: [MessageService]
+  providers: [MessageService],
+  standalone: true,
 })
 export class ContactUsComponent {
   protected readonly title = CONTACT_US_TITLE;

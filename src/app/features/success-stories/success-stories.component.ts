@@ -18,6 +18,7 @@ import {
   imports: [BgTitleComponent, ProfileCardListComponent, TranslatePipe],
   templateUrl: './success-stories.component.html',
   styleUrl: './success-stories.component.scss',
+  standalone: true,
 })
 export class SuccessStoriesComponent {
   title = TESTIMONIALS_SUCCESS_STORIES;

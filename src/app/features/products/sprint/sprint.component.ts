@@ -5,6 +5,7 @@ import {Component} from '@angular/core';
   imports: [],
   templateUrl: './sprint.component.html',
   styleUrl: './sprint.component.scss',
+  standalone: true,
 })
 export class SprintComponent {
 }

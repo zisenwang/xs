@@ -13,6 +13,7 @@ import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
   ],
   templateUrl: './interview.component.html',
   styleUrl: './interview.component.scss',
+  standalone: true,
 })
 export class InterviewComponent implements OnInit {
   private translate = inject(TranslateService);

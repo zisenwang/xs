@@ -1,15 +1,13 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { Menubar } from 'primeng/menubar';
 import { ScrollService } from '@services/index';
 import { CommonModule } from '@angular/common';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { Router, RouterLink } from '@angular/router';
 import {
   HEADER_SECTOR,
   MAIN_PAGE,
-  LANG_ZH_CN,
-  LANG_EN,
 } from '@shared/constants';
 import {TranslateButtonComponent} from '@shared/components/translate-button/translate-button.component';
 

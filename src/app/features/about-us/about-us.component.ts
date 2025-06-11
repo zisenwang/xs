@@ -14,6 +14,7 @@ import {FEATURES} from '@app/features/about-us/about-us.constants';
   imports: [BgTitleComponent, TranslatePipe, Card],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss',
+  standalone: true,
 })
 export class AboutUsComponent {
   protected readonly bgUrl = BG_ABOUT_US_URL;

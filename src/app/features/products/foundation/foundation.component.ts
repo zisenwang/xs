@@ -5,6 +5,7 @@ import {Component} from '@angular/core';
   imports: [],
   templateUrl: './foundation.component.html',
   styleUrl: './foundation.component.scss',
+  standalone: true,
 })
 export class FoundationComponent {
 }

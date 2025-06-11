@@ -17,6 +17,7 @@ import {TEACHERS} from '@app/features/teachers/teachers.constants';
   imports: [BgTitleComponent, TranslatePipe, ProfileCardListComponent],
   templateUrl: './teachers.component.html',
   styleUrl: './teachers.component.scss',
+  standalone: true,
 })
 export class TeachersComponent {
   protected readonly title = TEACHERS_TITLE;

@@ -5,6 +5,7 @@ import {Component} from '@angular/core';
   imports: [],
   templateUrl: './interview-en.component.html',
   styleUrl: './interview-en.component.scss',
+  standalone: true,
 })
 export class InterviewEnComponent {
 }

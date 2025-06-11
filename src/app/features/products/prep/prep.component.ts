@@ -5,6 +5,7 @@ import {Component} from '@angular/core';
   imports: [],
   templateUrl: './prep.component.html',
   styleUrl: './prep.component.scss',
+  standalone: true,
 })
 export class PrepComponent {
 }

@@ -12,6 +12,7 @@ import {Router, RouterOutlet} from '@angular/router';
   imports: [PanelMenu, BgTitleComponent, TranslatePipe, Panel, RouterOutlet],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss',
+  standalone: true,
 })
 export class ProductsComponent implements OnInit {
   private router = inject(Router)

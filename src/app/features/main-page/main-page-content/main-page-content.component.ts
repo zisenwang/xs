@@ -25,6 +25,7 @@ import { ScrollService } from '@shared/services';
   ],
   templateUrl: './main-page-content.component.html',
   styleUrl: './main-page-content.component.scss',
+  standalone: true,
 })
 export class MainPageContentComponent implements AfterViewInit {
   private elementRef = inject(ElementRef);
