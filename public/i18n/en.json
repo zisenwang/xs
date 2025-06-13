@@ -81,5 +81,12 @@
   },
   "teachers": {
     "subtitle": "Research-led Education - Welcoming a student means embracing a responsibility"
+  },
+  "products": {
+    "advanced": "Preparation Courses",
+    "foundation": "Foundation Camp",
+    "interview": "Interview Training",
+    "prep": "Preparation Camp",
+    "sprint": "Sprint Camp"
   }
 }

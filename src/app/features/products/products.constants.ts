@@ -6,22 +6,22 @@ export interface ProductItem {
 export const PRODUCTS_DETAIL: ProductItem[] = [
   {
     id: 'foundation',
-    title: '牛剑基础营',
+    title: 'products.foundation',
   },
   {
     id: 'prep',
-    title: '牛剑先修营',
+    title: 'products.prep',
   },
   {
     id: 'sprint',
-    title: '牛剑冲刺营',
+    title: 'products.sprint',
   },
   {
     id: 'interview',
-    title: '笔面试课程',
+    title: 'products.interview',
   },
   {
     id: 'advanced',
-    title: '学科先修课程',
+    title: 'products.advanced',
   },
 ];

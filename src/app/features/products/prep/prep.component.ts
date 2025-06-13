@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component, DestroyRef, inject, OnInit} from '@angular/core';
+import {Component, DestroyRef, inject, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import { LANG_EN, LANG_ZH_CN } from '@shared/constants';
 import {takeUntilDestroyed} from '@angular/core/rxjs-interop';

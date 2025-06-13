@@ -5,14 +5,18 @@
   class="flex min-h-[80vh] max-w-6xl mt-24 mx-auto font-sans p-5 box-border animate-enter fade-in-10 animate-duration-2000">
   <!-- Sidebar -->
   <div class="w-60 sticky top-28 h-fit mr-5 z-10">
-    <p-panelMenu [model]="model"></p-panelMenu>
+    <p-panelMenu [model]="model">
+      <ng-template #item let-item>
+        <a class="px-4 py-2 cursor-pointer ml-2">{{ item.label | translate }}</a>
+      </ng-template>
+    </p-panelMenu>
   </div>
 
   <!-- Main Content -->
   <div class="flex-1">
     <p-panel [toggleable]="false">
       <ng-template #header>
-        <h2 class="text-xl font-semibold m-0">{{ selectedProduct.title }}</h2>
+        <h2 class="text-xl font-semibold m-0">{{ selectedProduct.title | translate }}</h2>
       </ng-template>
       <router-outlet></router-outlet>
     </p-panel>
