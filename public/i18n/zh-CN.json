@@ -10,7 +10,18 @@
       "chemistry": "化学",
       "biology": "生物"
     },
-    "nav": "导航"
+    "nav": "导航",
+    "form": {
+      "required": "必填",
+      "name": "姓名",
+      "tuitionFor": "您需要哪方面的辅导？",
+      "phone": "手机号",
+      "wechat": "微信",
+      "email": "电子邮箱",
+      "message": "留言",
+      "submit": "提交",
+      "contactUs": "联系客服微信"
+    }
   },
   "header": {
     "aboutUs": "公司介绍",

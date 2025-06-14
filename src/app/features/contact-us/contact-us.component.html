@@ -7,13 +7,13 @@
     <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-6">
       <div class="flex flex-col gap-2">
         <label for="name" class="block"
-          ><span class="text-red-500">*</span>Name</label
+          ><span class="text-red-500">*</span>{{'app.form.name' | translate}}</label
         >
         <input
           type="text"
           pInputText
           id="name"
-          placeholder="Required"
+          [placeholder]="'app.form.required' | translate"
           [ngClass]="{
             'ng-invalid ng-dirty':
               contactForm.get('name')?.invalid &&
@@ -30,7 +30,7 @@
       </div>
 
       <div class="flex flex-col gap-2">
-        <label class="block">What do you want tuition for?</label>
+        <label class="block">{{'app.form.tuitionFor'| translate}}</label>
         @for (subject of tuitionOptions; track subject) {
           <div class="flex items-center">
             <p-checkbox
@@ -46,13 +46,13 @@
 
       <div class="flex flex-col gap-2">
         <label for="phone" class="block"
-          ><span class="text-red-500">*</span>Phone</label
+          ><span class="text-red-500">*</span>{{'app.form.phone' | translate}}</label
         >
         <input
           type="number"
           pInputText
           id="phone"
-          placeholder="Required"
+          [placeholder]="'app.form.required' | translate"
           [ngClass]="{
             'ng-invalid ng-dirty':
               contactForm.get('phone')?.invalid &&
@@ -70,13 +70,13 @@
 
       <div class="flex flex-col gap-2">
         <label for="wechat" class="block"
-          ><span class="text-red-500">*</span>WeChat</label
+          ><span class="text-red-500">*</span>{{'app.form.wechat' | translate}}</label
         >
         <input
           type="text"
           pInputText
           id="wechat"
-          placeholder="Required"
+          [placeholder]="'app.form.required' | translate"
           [ngClass]="{
             'ng-invalid ng-dirty':
               contactForm.get('wechat')?.invalid &&
@@ -94,28 +94,16 @@
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="email" class="block">Email</label>
+        <label for="email" class="block">{{'app.form.email' | translate}}</label>
         <input
           type="text"
           pInputText
           id="email"
-          [ngClass]="{
-            'ng-invalid ng-dirty':
-              contactForm.get('email')?.invalid &&
-              contactForm.get('email')?.touched,
-          }"
           formControlName="email" />
-        @if (
-          contactForm.get('email')?.invalid && contactForm.get('email')?.touched
-        ) {
-          <p-message severity="error" variant="simple" size="small"
-            >Email is invalid</p-message
-          >
-        }
       </div>
 
       <div class="flex flex-col gap-2">
-        <label for="message" class="block">Message</label>
+        <label for="message" class="block">{{'app.form.message' | translate}}</label>
         <textarea
           pTextarea
           id="message"
@@ -124,18 +112,19 @@
           class="resize-none"></textarea>
       </div>
 
-      <p-button type="submit" label="Submit" />
+      <p-button type="submit" [label]="'app.form.submit' | translate" />
     </form>
   </div>
   <div class="flex-1 items-center justify-center sticky top-28 pt-4 h-fit">
     <div
       class="bg-gray-100 text-blue-900 rounded-2xl shadow-md p-6 w-full max-w-md text-center space-y-4">
-      <div class="text-lg font-semibold">联系客服微信</div>
+      <div class="text-lg font-semibold">{{'app.form.contactUs' | translate}}</div>
       <img
         alt="wechat"
         src="/images/hills_wechat_qr.png"
         class="w-full rounded-lg" />
-      <div class="text-sm">邮箱：contact&#64;hillsedtech.com</div>
+      <div class="text-sm">{{'app.form.email' | translate}}：contact&#64;hillsedtech.com</div>
     </div>
   </div>
 </div>
+

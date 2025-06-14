@@ -10,7 +10,18 @@
       "chemistry": "Chemistry",
       "biology": "Biology"
     },
-    "nav": "Navigation"
+    "nav": "Navigation",
+    "form": {
+      "required": "Required",
+      "name": "Name",
+      "tuitionFor": "What do you want tuition for?",
+      "phone": "Phone",
+      "wechat": "Wechat",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit",
+      "contactUs": "Our WeChat"
+    }
   },
   "header": {
     "aboutUs": "About Us",
