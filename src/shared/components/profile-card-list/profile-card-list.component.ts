@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Image } from 'primeng/image';
 import { AnimateOnScroll } from 'primeng/animateonscroll';
 import { Card } from 'primeng/card';
+import {TranslatePipe} from '@ngx-translate/core';
 
 export interface IProfile {
   name: string;
@@ -11,7 +12,7 @@ export interface IProfile {
 
 @Component({
   selector: 'xs-shared-profile-card-list',
-  imports: [Image, AnimateOnScroll, Card],
+  imports: [Image, AnimateOnScroll, Card, TranslatePipe],
   templateUrl: './profile-card-list.component.html',
   styleUrl: './profile-card-list.component.scss',
   standalone: true,

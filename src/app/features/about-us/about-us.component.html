@@ -4,39 +4,40 @@
   [bgUrl]="bgUrl">
 </xs-shared-bg-title>
 
-<main class="max-w-6xl mx-auto px-4 py-16 animate-enter fade-in-10 animate-duration-2000">
+<main
+  class="max-w-6xl mx-auto px-4 py-16 animate-enter fade-in-10 animate-duration-2000">
   <section class="mb-12">
     <h2 class="text-4xl font-bold text-center mb-8">
-      <span class="p-text-title">关于我们</span>
+      <span class="p-text-title">{{'header.aboutUs' | translate }}</span>
     </h2>
     <div class="p-text-normal">
       <p class="mb-4">
-        北京修斯学科先修课程是一门区别于传统应试教育的精英课程，由全牛津-剑桥导师团队倾力打造。
-        我们专注于教授学科知识、激发学术兴趣，并培养学生的独立思考与探索能力。
+        {{'aboutUs.intro1' | translate }}
       </p>
       <p>
-        课程涵盖高中至大学基础内容，并扩展至竞赛难度，适用于顶尖大学自主招生考核以及国际性标化考试。
+        {{ 'aboutUs.intro2' | translate }}
       </p>
     </div>
   </section>
 
   <section class="mb-12">
     <h2 class="text-4xl font-bold text-center mb-8">
-      <span class="p-text-title">课程特色</span>
+      <span class="p-text-title">{{'aboutUs.highlights' | translate}}</span>
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      @for (feature of features; track feature.title){
+      @for (feature of features; track feature.title) {
         <p-card
           styleClass="text-center transform transition-all duration-300 hover:-translate-y-2">
           <ng-template #header>
-            <img [src]="feature.image"
-                 [alt]="feature.title"
-                 class="mx-auto w-24 h-24 mb-4">
+            <img
+              [src]="feature.image"
+              [alt]="feature.title"
+              class="mx-auto w-24 h-24 mb-4" />
           </ng-template>
           <h3 class="text-xl font-semibold mb-3">
-            <span class="p-text-secondary">{{feature.title}}</span>
+            <span class="p-text-secondary">{{ feature.title | translate}}</span>
           </h3>
-          <p class="p-text-normal">{{feature.description}}</p>
+          <p class="p-text-normal">{{ feature.description ?? '' | translate }}</p>
         </p-card>
       }
     </div>
@@ -44,11 +45,10 @@
 
   <section class="mb-12">
     <h2 class="text-4xl font-bold text-center mb-8">
-      <span class="p-text-title">适合学员</span>
+      <span class="p-text-title">{{ 'aboutUs.idealStudent' | translate }}</span>
     </h2>
     <p class="p-text-normal text-center">
-      本课程适合具有良好数学及科学基础，渴望深度探索学科知识、
-      并计划申请世界顶尖大学的高一年级及同等国际课程学生。
+      {{'aboutUs.idealStudentDesc' | translate }}
     </p>
   </section>
 </main>

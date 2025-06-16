@@ -7,6 +7,7 @@ import { TranslatePipe } from '@ngx-translate/core';
   imports: [TranslatePipe],
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss',
+  standalone: true,
 })
 export class BannerComponent {
   private scrollService = inject(ScrollService);
