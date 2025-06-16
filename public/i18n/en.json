@@ -56,7 +56,21 @@
   },
   "testimonials": {
     "successStories": "Success Stories",
-    "slogan": "Explore Real Stories of How We Help Students Achieve Their Dreams"
+    "slogan": "Explore Real Stories of How We Help Students Achieve Their Dreams",
+    "studentYu": "Student Yu",
+    "studentShi": "Student Shi",
+    "studentXu": "Student Xu",
+    "cambridge": "University of Cambridge",
+    "oxford": "University of Oxford",
+    "engineer": "Engineering",
+    "interview": "Interview",
+    "summerCamp": "Summer Camp",
+    "keywords": "Keywords",
+    "advancedCourses": "Advanced Courses",
+    "competitions": "Competitions",
+    "testimonialYu": "Thanks to Teacher Kevin's patient guidance, I was able to achieve my dream of getting into a top university.",
+    "testimonialShi": "Hills Education provided me with systematic learning and guidance, helping me receive an offer from Cambridge.",
+    "testimonialXu": "Thanks to Hills Education for guiding me on the path of competitions and supporting my top university application."
   },
   "business": {
     "stats": {
@@ -87,17 +101,80 @@
       }
     }
   },
-  "about us": {
-    "subtitle": "Elite Programs · Academic Excellence · Global Perspective"
+  "aboutUs": {
+    "subtitle": "Elite Programs · Academic Excellence · Global Perspective",
+    "intro1": "Beijing Hills Subject Foundation Course is an elite program distinct from traditional exam-oriented education, meticulously developed by a full team of Oxford and Cambridge mentors. We focus on teaching core subject knowledge, sparking academic interest, and cultivating students' independent thinking and exploratory abilities.",
+    "intro2": "The course covers material from high school to university foundational levels and extends to competition-level difficulty, making it suitable for top university admissions assessments as well as international standardized exams.",
+    "highlights": "Course Highlights",
+    "oxbridgeTeam": "Full Oxford–Cambridge Mentor Team",
+    "oxbridgeTeamDesc": "All instructors are graduates of world-renowned universities, with extensive academic and teaching experience.",
+    "highDensity": "High-Density Intensive Lectures",
+    "highDensityDesc": "Course content spans from high school to early university level, and is further extended to competitive difficulty.",
+    "wideApply": "Wide Applicability",
+    "wideApplyDesc": "Applicable to standardized tests, academic competitions, and top university independent admissions assessments.",
+    "idealStudent": "Ideal Students",
+    "idealStudentDesc": "This course is suitable for students in Grade 10 or equivalent international curricula who have a solid foundation in math and science, are eager to explore academic subjects in depth, and plan to apply to the world’s leading universities."
   },
   "teachers": {
-    "subtitle": "Research-led Education - Welcoming a student means embracing a responsibility"
-  },
+    "subtitle": "Research-led Education - Welcoming a student means embracing a responsibility",
+    "kevin": {
+      "name": "Dr. Kevin Chen, MSc in Engineering Science from the University of Oxford, PhD in Solid Mechanics and Applied Mathematics",
+      "intro1": "Founder of Beijing Hughes Education Technology, Head of the Physics and Engineering Division.",
+      "intro2": "Studied under David Hills, Fellow of the Royal Academy of Engineering.",
+      "intro3": "Marker for Oxford University’s PAT (Physics Aptitude Test) in 2019, 2020, and 2021.",
+      "intro4": "Nearly 10 years of experience in Oxbridge preparation; has guided over 100 students to admission at Oxford and Cambridge."
+    },
+    "jo": {
+      "name": "Jo Hu, BA in Economics from the University of Cambridge",
+      "intro1": "Head of the Economics Division at Beijing Hughes.",
+      "intro2": "Formerly worked at a leading education institution in China and authored all its economics lecture materials.",
+      "intro3": "Extensive reading and analysis of a vast number of economics books and media reports.",
+      "intro4": "Years of experience supervising student research projects in economics and guiding Cambridge economics applications."
+    },
+    "li": {
+      "name": "Li, BA in Mathematics from the University of Oxford",
+      "intro1": "Head of the Mathematics Division at Beijing Hughes.",
+      "intro2": "Long-time instructor of STEP, MAT, AMC, and other competition courses.",
+      "intro3": "Extensive experience in domestic and international math competitions; passionate about theoretical mathematics.",
+      "intro4": "Has guided many students in applying to Oxbridge-related programs."
+    },
+    "arina": {
+      "name": "Dr. Arina Huang, First-Class Honours in Natural Sciences from the University of Cambridge, currently a Postdoctoral Researcher at Queen Mary University of London",
+      "intro1": "Head of the Biology Division at Beijing Hughes.",
+      "intro2": "Specializes in PS guidance, interview training, and academic enhancement in biology, chemistry, and mathematics.",
+      "intro3": "Over 5 years of experience in Oxbridge application coaching; has successfully guided many students to Oxbridge offers."
+    },
+    "christian": {
+      "name": "Christian, BA in Chemistry from the University of Oxford",
+      "intro1": "Head of the Chemistry Division at Beijing Hughes.",
+      "intro2": "Over 1,000 hours of tutoring experience; has helped numerous students secure Oxbridge-related offers."
+    }
+},
   "products": {
     "advanced": "Preparation Courses",
     "foundation": "Foundation Camp",
     "interview": "Interview Training",
     "prep": "Preparation Camp",
     "sprint": "Sprint Camp"
+  },
+  "successStories": {
+    "yu": {
+      "name": "Student Yu, Admitted to Engineering at the University of Cambridge",
+      "intro1": "Under long-term guidance from Mentor Kevin, the student set their sights on physics as early as Year 10, began self-studying university-level courses, and actively participated in research projects, building a solid academic foundation.",
+      "intro2": "During the preparation phase, they practiced systematically and enhanced their interview skills. Kevin provided not only abundant resources and university selection advice but also arranged one-on-one mock interviews with current students from target universities, helping the student perform confidently in formal settings.",
+      "intro3": "With passion for the subject, accumulated self-study, and comprehensive preparation, the student successfully received an offer from a top G5 university in the UK, realizing their dream of attending a world-class institution."
+    },
+    "shi": {
+      "name": "Student Shi, Admitted to Engineering at the University of Cambridge",
+      "intro1": "In 2023, the student participated in the Hughes Summer Camp and, through systematic coaching at Hughes, successfully secured admission to the Engineering program at Cambridge.",
+      "intro2": "Through the Oxbridge summer program, exam preparation, and interview training, the student significantly improved their math and physics skills as well as their test performance.",
+      "intro3": "Their personal statement was refined with engineering reading extensions, accurately showcasing academic passion and professional potential."
+    },
+    "xu": {
+      "name": "Student Xu, Admitted to Engineering at the University of Oxford",
+      "intro1": "Under Mentor Kevin’s guidance, the student built a solid academic foundation within one year and completed multiple mainstream competitions during the AS stage, gradually establishing academic strengths.",
+      "intro2": "By reading electrical and electronic engineering books and watching engineering videos recommended by the mentor, the student clarified their academic direction and systematically prepared for the PAT and ENGAA exams, completing all past papers to build a strong foundation.",
+      "intro3": "With Kevin’s connections, the student participated in multiple mock interviews with Oxford seniors, explored challenging questions deeply, and ultimately received an offer from the Engineering program at the University of Oxford."
+    }
   }
 }

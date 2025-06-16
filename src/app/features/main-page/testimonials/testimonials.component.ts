@@ -19,7 +19,7 @@ interface SuccessCase {
   studentImage: string;
   admittedSchool: string;
   major: string;
-  background: string;
+  background: string[];
   testimonial: string;
 }
 
@@ -44,28 +44,28 @@ export class TestimonialsComponent {
 
   successCases: SuccessCase[] = [
     {
-      studentName: '喻同学',
+      studentName: 'testimonials.studentYu',
       studentImage: '/images/cambridge.png',
-      admittedSchool: '剑桥大学',
-      major: '工程',
-      background: '高阶课程 | G5 | 面试',
-      testimonial: '感谢Kevin老师的悉心指导，让我能够实现名校梦想。',
+      admittedSchool: 'testimonials.cambridge',
+      major: 'testimonials.engineer',
+      background: ['testimonials.advancedCourses','G5','testimonials.interview'],
+      testimonial: 'testimonials.testimonialYu',
     },
     {
-      studentName: '史同学',
+      studentName: 'testimonials.studentShi',
       studentImage: '/images/cambridge.png',
-      admittedSchool: '剑桥大学',
-      major: '工程',
-      background: '夏令营 | PAT | 面试',
-      testimonial: '修斯教育给我系统性的学习与指导，让我收获剑桥Offer。',
+      admittedSchool: 'testimonials.cambridge',
+      major: 'testimonials.engineer',
+      background: ['testimonials.summerCamp','PAT','testimonials.interview'],
+      testimonial: 'testimonials.testimonialShi',
     },
     {
-      studentName: '徐同学',
+      studentName: 'testimonials.studentXu',
       studentImage: '/images/oxford.png',
-      admittedSchool: '牛津大学',
-      major: '工程',
-      background: 'PAT | ENGAA | 竞赛',
-      testimonial: '感谢修斯教育指引我竞赛之路，助力名校申请。',
+      admittedSchool: 'testimonials.oxford',
+      major: 'testimonials.engineer',
+      background: ['PAT','ENGAA','testimonials.competitions'],
+      testimonial: 'testimonials.testimonialXu',
     },
   ];
 
