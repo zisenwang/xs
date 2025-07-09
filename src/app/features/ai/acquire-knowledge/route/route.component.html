@@ -1,0 +1,21 @@
+<div class="learning-path">
+  @for (unit of units; track unit; let i = $index){
+    <div class="unit-wrapper">
+    @if (i > 0) {
+      <div class="connector top"></div>
+    }
+    <div class="unit-node">
+      @if (i < 1) {
+        <span class="pi pi-check"></span>
+      }
+      @if (i >= 1) {
+        <span class="pi pi-lock"></span>
+      }
+      <span class="label">{{ unit }}</span>
+    </div>
+    @if (i < units.length - 1) {
+      <div class="connector bottom"></div>
+    }
+    </div>
+  }
+</div>

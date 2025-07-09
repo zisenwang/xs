@@ -1,0 +1,8 @@
+@if (selection === ''){
+  <p-card header="自动测试你的学习路线（推荐）" class="hover:cursor-pointer" (click)="changeSelection('test')"></p-card>
+  <div class="h-30"></div>
+  <p-card header="自定义你的学习路线"></p-card>
+}
+@if (selection === 'test'){
+  <xs-acquire-knowledge-test></xs-acquire-knowledge-test>
+}

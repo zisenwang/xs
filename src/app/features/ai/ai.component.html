@@ -1,0 +1,18 @@
+<div class="app-shell">
+  <p-panelMenu [model]="menuItems" styleClass="sidebar"></p-panelMenu>
+
+  <main class="content">
+    @if (activeModule === 'path'){
+      <xs-acquire-knowledge></xs-acquire-knowledge>
+    }
+    @else if (activeModule === 'get'){
+      <xs-unit></xs-unit>
+    }
+    @else{
+      <div class="placeholder">
+        <h2>{{ activeLabel }}</h2>
+        <p>模块正在开发中…</p>
+      </div>
+    }
+  </main>
+</div>
