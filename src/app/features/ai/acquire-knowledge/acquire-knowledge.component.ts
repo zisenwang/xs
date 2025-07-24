@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import {PanelMenu} from 'primeng/panelmenu';
 import {Card} from 'primeng/card';
 import {TestComponent} from '@app/features/ai/acquire-knowledge/test/test.component';
 import {RouteComponent} from '@app/features/ai/acquire-knowledge/route/route.component';
