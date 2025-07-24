@@ -1,0 +1,48 @@
+<div class="flex flex-col flex-auto">
+  <h1 class="text-3xl font-bold mb-4 text-primary-600 dark:text-primary-400">
+    <i class="pi pi-question-circle mr-2"></i>
+    练习题 #{{question.id}}
+  </h1>
+
+  <!-- 问题图片显示 -->
+  @if (question.imagePath) {
+    <img [src]="question.imagePath" [alt]="'Question ' + question.id" class="max-h-40 object-contain mb-4">
+  } @else {
+    <p class="mb-4 p-4 bg-surface-50 dark:bg-surface-800 rounded-lg text-lg font-serif">
+      {{question.title}}
+    </p>
+
+  }
+
+  <!-- 答案上传区域 -->
+  <div
+    class="border-2 border-dashed border-surface-200 dark:border-surface-700 rounded bg-surface-50 dark:bg-surface-950 flex-auto flex flex-col justify-center items-center font-medium"
+    (dragover)="onDragOver($event)"
+    (dragleave)="onDragLeave($event)"
+    (drop)="onDrop($event)"
+  >
+    <!-- 预览已上传的图片 -->
+    @if (uploadedImage) {
+      <img [src]="uploadedImage" alt="Your answer" class="max-h-100 object-contain mb-2">
+    }
+
+    <!-- 上传控件 -->
+    <input
+      type="file"
+      #fileInput
+      (change)="onFileSelected($event)"
+      accept="image/*"
+      style="display: none"
+    >
+
+    <div class="text-center my-8">
+      <p-button
+        icon="pi pi-upload"
+        label="上传答案"
+        (onClick)="fileInput.click()"
+        [outlined]="true"
+      ></p-button>
+      <p class="mt-2 text-sm text-surface-600">支持拖放或点击上传图片</p>
+    </div>
+  </div>
+</div>

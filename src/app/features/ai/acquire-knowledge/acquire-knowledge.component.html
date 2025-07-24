@@ -4,5 +4,10 @@
   <p-card header="自定义你的学习路线"></p-card>
 }
 @if (selection === 'test'){
-  <xs-acquire-knowledge-test></xs-acquire-knowledge-test>
+  <xs-acquire-knowledge-test
+    (submitAnswer)="changeSelection('route')"
+  />
+}
+@if (selection === 'route'){
+  <xs-acquire-knowledge-route/>
 }
