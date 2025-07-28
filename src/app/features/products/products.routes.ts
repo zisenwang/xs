@@ -11,12 +11,12 @@ export const productsRoutes: Routes = [
     path: '',
     component: ProductsComponent,
     children: [
-      { path: 'foundation', component: FoundationComponent },
+      // { path: 'foundation', component: FoundationComponent },
       { path: 'advanced', component: AdvancedComponent },
       { path: 'interview', component: InterviewComponent },
-      { path: 'prep', component: PrepComponent },
+      // { path: 'prep', component: PrepComponent },
       { path: 'sprint', component: SprintComponent },
-      { path: '', redirectTo: 'foundation', pathMatch: 'full' },
+      { path: '', redirectTo: 'sprint', pathMatch: 'full' },
     ],
   },
 ];

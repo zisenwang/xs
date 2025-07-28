@@ -10,29 +10,23 @@
     <h2 class="text-4xl font-bold text-center mb-8">
       <span class="p-text-title">{{'header.aboutUs' | translate }}</span>
     </h2>
-    <div class="p-text-normal">
-      <p class="mb-4">
-        {{'aboutUs.intro1' | translate }}
-      </p>
-      <p>
-        {{ 'aboutUs.intro2' | translate }}
-      </p>
-    </div>
+    <div class="mb-4" [innerHtml]="'aboutUs.intro' | translate"></div>
   </section>
 
-  <section class="mb-12">
+  <section class="mb-12 relative">
     <h2 class="text-4xl font-bold text-center mb-8">
       <span class="p-text-title">{{'aboutUs.highlights' | translate}}</span>
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       @for (feature of features; track feature.title) {
         <p-card
+          class="flex min-y-full"
           styleClass="text-center transform transition-all duration-300 hover:-translate-y-2">
           <ng-template #header>
             <img
               [src]="feature.image"
               [alt]="feature.title"
-              class="mx-auto w-24 h-24 mb-4" />
+              class="h-full w-full object-cover object-center" />
           </ng-template>
           <h3 class="text-xl font-semibold mb-3">
             <span class="p-text-secondary">{{ feature.title | translate}}</span>
