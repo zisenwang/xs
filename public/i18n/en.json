@@ -2,7 +2,7 @@
   "app": {
     "title": "Hills Education & Technology",
     "switch": "Switch to: ",
-    "company full name": "Beijing Hills Education & Technology",
+    "company full name": "Hills Education & Technology",
     "subjects": {
       "engineeringPhysics": "Engineering Physics",
       "maths": "Mathematics",
@@ -78,40 +78,41 @@
       "interview": "Interview Success",
       "ox offer": "Oxbridge Offers"
     },
-    "our philosophy": "Our Philosophy",
-    "desc": "Drawing from years of teaching expertise, we craft personalized learning solutions and integrate hybrid online-offline teaching methods to maximize learning outcomes.",
+    "our philosophy": "Our View",
+    "desc": "Hills believes education should be driven by knowledge and curiosity, not anxiety or short-term goals. We help students build solid foundations, think independently, and prepare for the world’s top universities.",
     "subs": {
       "exam": {
-        "title": "About Examinations",
-        "desc": "Comprehensive analysis of standardized tests like SAT, ACT, and AP, providing targeted preparation strategies and timeline planning to help you achieve your desired scores."
+        "title": "Our View on Exams",
+        "desc": "Improving exam results means raising your true ability and achieving greater consistency. Real progress starts with deep understanding and genuine mastery, followed by targeted practice to build confidence and stability. At Hills, we focus on meaningful learning, not short-term cramming. We don’t trade on anxiety — we help students build lasting ability."
       },
       "curriculum": {
-        "title": "Exclusive Curriculum",
-        "desc": "Comprehensive analysis of standardized tests like SAT, ACT, and AP, providing targeted preparation strategies and timeline planning to help you achieve your desired scores."
+        "title": "Exclusive Course Design",
+        "desc": "Hills’ Foundation Programme is led by an all-Oxbridge tutor team, focused on academic depth rather than exam drilling. The course builds solid subject knowledge from A-level through to university foundation level, with extension to competition standard. Small-group, blackboard-based teaching develops clear logic, independent thinking and confident academic English — preparing students for success at the world’s top universities."
 
       },
       "faculty": {
-        "title": "Teaching Faculty",
-        "desc": "Comprehensive analysis of standardized tests like SAT, ACT, and AP, providing targeted preparation strategies and timeline planning to help you achieve your desired scores."
+        "title": "Top University Tutor Team",
+        "desc": "Hills’ tutors are graduates of Oxford, Cambridge and other world-leading universities. With strong academic backgrounds and rich teaching experience, they understand what top universities look for and are dedicated to helping students build deep knowledge, sharp thinking skills, and stand out in their studies and applications."
 
       },
       "success": {
-        "title": "Success Stories",
-        "desc": "Comprehensive analysis of standardized tests like SAT, ACT, and AP, providing targeted preparation strategies and timeline planning to help you achieve your desired scores."
+        "title": "Ideal Student Profile",
+        "desc": "At Hills, we believe that genuine interest in a subject is the most important admissions criterion. Only students who truly love their subject can keep exploring and achieving at university.\nAn ideal applicant shows: Passion for the subject，Strong understanding，Solid academic foundation，Quick insight.\n"
       }
     }
   },
   "aboutUs": {
     "subtitle": "Elite Programs · Academic Excellence · Global Perspective",
-    "intro1": "Beijing Hills Subject Foundation Course is an elite program distinct from traditional exam-oriented education, meticulously developed by a full team of Oxford and Cambridge mentors. We focus on teaching core subject knowledge, sparking academic interest, and cultivating students' independent thinking and exploratory abilities.",
+    "intro1": "Hills Subject Foundation Course is an elite program distinct from traditional exam-oriented education, meticulously developed by a full team of Oxford and Cambridge mentors. We focus on teaching core subject knowledge, sparking academic interest, and cultivating students' independent thinking and exploratory abilities.",
     "intro2": "The course covers material from high school to university foundational levels and extends to competition-level difficulty, making it suitable for top university admissions assessments as well as international standardized exams.",
+    "intro": "<p class=\"mb-4\">In January 2015, I received a conditional offer from the University of Oxford. A parent of a younger pupil asked me for advice on applying to Oxbridge. I smiled and offered to guide them through the process. That year, we celebrated our very first Oxbridge offer — and so the story of Hills began.</p><p class=\"mb-4\">Over the past ten years, I have never found teaching exhausting. Every time I see a student grasp something new or witness that spark in their eyes, I am reminded why I love teaching and feel fortunate to have this calling. Since then, we have supported hundreds of students in securing offers from Oxford, Cambridge and other top universities, while building a team of passionate educators who share this vision.</p><p class=\"mb-4\">At Hills, we don’t trade on fear or offer empty “planning packages”. We believe the true purpose of education is: </p><p class=\"mb-4 italic text-xl font-bold\">To impart knowledge, nurture curiosity, and inspire independent thought.</p><p class=\"mb-4\">Exams are not the be all and end all of education, and textbooks should never be treated as mere instruction manuals. No leading university wants its students to be exam machines.</p><p class=\"mb-4\">We are committed to research-led teaching, developing our own accelerated programmes that focus on the heart of the subject. Our courses are not narrow and exam-focused--they equip students with comprehensive knowledge and skills to excel in all relevant assessments.</p><p class=\"mb-4\">As Han Yu wrote over a thousand years ago: “A teacher is one who passes on the truth, imparts knowledge, and dispels doubt.” This is a belief shared by every member of the Hills team. We strive to continue the spirit of intellectual freedom passed down by the ancient Greek academies — where knowledge is shared freely, and the seeds of independent thought are sown.</p>",
     "highlights": "Course Highlights",
-    "oxbridgeTeam": "Full Oxford–Cambridge Mentor Team",
-    "oxbridgeTeamDesc": "All instructors are graduates of world-renowned universities, with extensive academic and teaching experience.",
-    "highDensity": "High-Density Intensive Lectures",
-    "highDensityDesc": "Course content spans from high school to early university level, and is further extended to competitive difficulty.",
-    "wideApply": "Wide Applicability",
-    "wideApplyDesc": "Applicable to standardized tests, academic competitions, and top university independent admissions assessments.",
+    "oxbridgeTeam": "Oxbridge Tutor Team",
+    "oxbridgeTeamDesc": "Our courses are delivered by experienced tutors who hold degrees from Oxford or Cambridge",
+    "highDensity": "Accelerated Learning",
+    "highDensityDesc": "Students get ahead of their school curriculum, strengthen their foundational knowledge, and are naturally prepared for a range of international exams",
+    "wideApply": "Research-led Teaching",
+    "wideApplyDesc": "All courses are designed in-house with a focus on genuine understanding and long-term ability — not on exploiting exam insecurities",
     "idealStudent": "Ideal Students",
     "idealStudentDesc": "This course is suitable for students in Grade 10 or equivalent international curricula who have a solid foundation in math and science, are eager to explore academic subjects in depth, and plan to apply to the world’s leading universities."
   },
@@ -119,43 +120,43 @@
     "subtitle": "Research-led Education - Welcoming a student means embracing a responsibility",
     "kevin": {
       "name": "Dr. Kevin Chen, MSc in Engineering Science from the University of Oxford, PhD in Solid Mechanics and Applied Mathematics",
-      "intro1": "Founder of Beijing Hughes Education Technology, Head of the Physics and Engineering Division.",
+      "intro1": "Founder of Hills Education Technology, Head of the Physics and Engineering Division.",
       "intro2": "Studied under David Hills, Fellow of the Royal Academy of Engineering.",
       "intro3": "Marker for Oxford University’s PAT (Physics Aptitude Test) in 2019, 2020, and 2021.",
       "intro4": "Nearly 10 years of experience in Oxbridge preparation; has guided over 100 students to admission at Oxford and Cambridge."
     },
     "jo": {
       "name": "Jo Hu, BA in Economics from the University of Cambridge",
-      "intro1": "Head of the Economics Division at Beijing Hughes.",
+      "intro1": "Head of the Economics Division at Hills.",
       "intro2": "Formerly worked at a leading education institution in China and authored all its economics lecture materials.",
       "intro3": "Extensive reading and analysis of a vast number of economics books and media reports.",
       "intro4": "Years of experience supervising student research projects in economics and guiding Cambridge economics applications."
     },
     "li": {
       "name": "Li, BA in Mathematics from the University of Oxford",
-      "intro1": "Head of the Mathematics Division at Beijing Hughes.",
+      "intro1": "Head of the Mathematics Division at Hills.",
       "intro2": "Long-time instructor of STEP, MAT, AMC, and other competition courses.",
       "intro3": "Extensive experience in domestic and international math competitions; passionate about theoretical mathematics.",
       "intro4": "Has guided many students in applying to Oxbridge-related programs."
     },
     "arina": {
       "name": "Dr. Arina Huang, First-Class Honours in Natural Sciences from the University of Cambridge, currently a Postdoctoral Researcher at Queen Mary University of London",
-      "intro1": "Head of the Biology Division at Beijing Hughes.",
+      "intro1": "Head of the Biology Division at Hills.",
       "intro2": "Specializes in PS guidance, interview training, and academic enhancement in biology, chemistry, and mathematics.",
       "intro3": "Over 5 years of experience in Oxbridge application coaching; has successfully guided many students to Oxbridge offers."
     },
     "christian": {
       "name": "Christian, BA in Chemistry from the University of Oxford",
-      "intro1": "Head of the Chemistry Division at Beijing Hughes.",
+      "intro1": "Head of the Chemistry Division at Hills.",
       "intro2": "Over 1,000 hours of tutoring experience; has helped numerous students secure Oxbridge-related offers."
     }
 },
   "products": {
-    "advanced": "Preparation Courses",
+    "advanced": "Accelerated Foundation Course",
     "foundation": "Foundation Camp",
-    "interview": "Interview Training",
+    "interview": "Aptitude Test & Interview Training",
     "prep": "Preparation Camp",
-    "sprint": "Sprint Camp"
+    "sprint": "Oxbridge Sprint Camp"
   },
   "successStories": {
     "yu": {
@@ -166,7 +167,7 @@
     },
     "shi": {
       "name": "Student Shi, Admitted to Engineering at the University of Cambridge",
-      "intro1": "In 2023, the student participated in the Hughes Summer Camp and, through systematic coaching at Hughes, successfully secured admission to the Engineering program at Cambridge.",
+      "intro1": "In 2023, the student participated in the Hills Summer Camp and, through systematic coaching at Hills, successfully secured admission to the Engineering program at Cambridge.",
       "intro2": "Through the Oxbridge summer program, exam preparation, and interview training, the student significantly improved their math and physics skills as well as their test performance.",
       "intro3": "Their personal statement was refined with engineering reading extensions, accurately showcasing academic passion and professional potential."
     },
