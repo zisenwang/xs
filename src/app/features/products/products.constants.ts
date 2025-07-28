@@ -4,24 +4,24 @@ export interface ProductItem {
 }
 
 export const PRODUCTS_DETAIL: ProductItem[] = [
+  // {
+  //   id: 'foundation',
+  //   title: 'products.foundation',
+  // },
+  // {
+  //   id: 'prep',
+  //   title: 'products.prep',
+  // },
   {
-    id: 'foundation',
-    title: 'products.foundation',
-  },
-  {
-    id: 'prep',
-    title: 'products.prep',
-  },
-  {
-    id: 'sprint',
-    title: 'products.sprint',
+    id: 'advanced',
+    title: 'products.advanced',
   },
   {
     id: 'interview',
     title: 'products.interview',
   },
   {
-    id: 'advanced',
-    title: 'products.advanced',
+    id: 'sprint',
+    title: 'products.sprint',
   },
 ];

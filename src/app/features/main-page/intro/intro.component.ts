@@ -33,13 +33,13 @@ export class IntroComponent {
       title: 'programs.camp.title',
       description: 'programs.camp.slogan',
       image: '/images/camp.png',
-      url: 'products/foundation',
+      url: 'products/sprint',
     },
     {
       title: 'programs.exam.title',
       description: 'programs.exam.slogan',
       image: '/images/exam.png',
-      url: 'products/prep',
+      url: 'products/sprint',
     },
   ];
 
