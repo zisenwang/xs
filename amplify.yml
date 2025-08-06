@@ -6,7 +6,7 @@ frontend:
         - nvm install 22
         - nvm use 22
         - npm cache clean --force
-        - npm ci
+        - npm ci --legacy-peer-deps
         - cd amplify && npm install
         - cd ..
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
@@ -20,3 +20,4 @@ frontend:
   cache:
     paths:
       - .npm/**/*
+      - node_modules/**/*
