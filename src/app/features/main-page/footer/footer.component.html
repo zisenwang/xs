@@ -6,31 +6,13 @@
     <div>
       <h2 class="text-lg font-semibold mb-2">{{ 'app.nav' | translate }}</h2>
       <ul class="space-y-1">
-        <li>
-          <a href="/" class="hover:underline">{{
-            'header.home' | translate
-          }}</a>
-        </li>
-        <li>
-          <a href="/about-us" class="hover:underline">{{
-            'header.aboutUs' | translate
-          }}</a>
-        </li>
-        <li>
-          <a href="/teachers" class="hover:underline">{{
-            'header.teachers' | translate
-          }}</a>
-        </li>
-        <li>
-          <a href="/success-stories" class="hover:underline">{{
-            'header.successStories' | translate
-          }}</a>
-        </li>
-        <li>
-          <a href="/contact-us" class="hover:underline">{{
-            'header.contactUs' | translate
-          }}</a>
-        </li>
+        @for (item of navItems; track item) {
+          <li>
+            <a [href]="item.href" class="hover:underline">{{
+                item.name | translate
+              }}</a>
+          </li>
+        }
       </ul>
     </div>
 

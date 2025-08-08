@@ -1,12 +1,19 @@
 import { Component, inject } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { Menubar } from 'primeng/menubar';
-import { ScrollService } from '@services/index';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { Router, RouterLink } from '@angular/router';
 import { HEADER_SECTOR, MAIN_PAGE } from '@shared/constants';
 import { TranslateButtonComponent } from '@shared/components/translate-button/translate-button.component';
+import { environment } from '@env/environment'
+
+export interface IMenuItem {
+  label: string;
+  icon: string;
+  command: () => void;
+  badge?: string;
+}
 
 @Component({
   selector: 'xs-header',
@@ -26,10 +33,9 @@ export class HeaderComponent {
   protected readonly HEADER_SECTOR = HEADER_SECTOR;
   protected readonly MAIN_PAGE = MAIN_PAGE;
 
-  private scrollService = inject(ScrollService);
   private router = inject(Router);
 
-  items = [
+  items: IMenuItem[] = [
     {
       label: 'header.aboutUs',
       icon: 'pi pi-fw pi-briefcase',
@@ -55,5 +61,11 @@ export class HeaderComponent {
       icon: 'pi pi-fw pi-envelope',
       command: () => this.router.navigate(['/contact-us']),
     },
+    {
+      label: 'header.ecat',
+      icon: 'pi pi-fw pi-globe',
+      command: () => window.open(environment.ecatUrl, '_blank'),
+      badge: 'New!'
+    }
   ];
 }

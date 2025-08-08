@@ -8,9 +8,19 @@
       </a>
     </ng-template>
     <ng-template #item let-item let-root="root">
-      <div class="p-4 hover:cursor-pointer">
-        <i [class]="item.icon"></i>
-        <span>{{ item.label | translate }}</span>
+      <div class="p-4 hover:cursor-pointer relative flex items-center">
+        @if (item.badge) {
+          <div class="flex items-center relative">
+            <i [class]="item.icon"></i>
+            <span class="mx-1">{{ item.label | translate }}</span>
+            <span class="absolute -top-2 -right-4 text-xs gradient-text rounded-badge">
+              {{item.badge}}
+            </span>
+          </div>
+        } @else {
+          <i [class]="item.icon"></i>
+          <span class="mx-1">{{ item.label | translate }}</span>
+        }
       </div>
     </ng-template>
     <ng-template #end>
