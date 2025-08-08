@@ -6,11 +6,9 @@ frontend:
         - nvm install 22
         - nvm use 22
         - npm cache clean --force
-        - npm install -g node-gyp
-        - npm ci --legacy-peer-deps --include=optional
-        - cd amplify && npm install --include=optional
+        - npm install
+        - cd amplify && npm install
         - cd ..
-        - npm rebuild @parcel/watcher
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
     build:
       commands:
